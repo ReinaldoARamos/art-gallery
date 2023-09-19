@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 
 export function HeaderTabs() {
-    const [currentTab, setCurrentTab] = useState('Início')
+    const [currentTab, setCurrentTab] = useState('inicio')
 
     return (
         <Tabs.Root value={currentTab} onValueChange={setCurrentTab}>
