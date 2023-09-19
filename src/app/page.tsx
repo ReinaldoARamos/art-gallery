@@ -50,7 +50,22 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div>oi</div>
+      <div>
+        <h1 className="text-heading   item-center  font-bold text-Title  mb-3">
+          Obras em destaque
+        </h1>
+        <div className="flex gap-5">
+          <div>oi</div>
+          <div>oi</div>
+          <div>oi</div>
+          <div>oi</div>
+        </div>
+      </div>
+      <div>
+        <h1 className="text-heading   item-center  font-bold text-Title  mb-3">
+          Artistas em destaque
+        </h1>
+      </div>
     </div>
   )
 }
