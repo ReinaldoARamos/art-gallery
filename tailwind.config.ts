@@ -14,19 +14,15 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        base: "rgba(101, 65, 13, 1)",
-        Title: "rgba(35, 21, 2, 1)"
+        base: 'rgba(101, 65, 13, 1)',
+        Title: 'rgba(35, 21, 2, 1)',
+        brown: 'rgba(90, 78, 60, 1)',
       },
       fontSize: {
-        heading: "2.8rem"
+        heading: '2.8rem',
       },
-      width: {
-        test: "140rem"
-      }
     },
   },
   plugins: [],
-
-  
 }
 export default config
