@@ -4,7 +4,7 @@ import { ArrowRightCircle } from 'lucide-react'
 import { Board } from './components/Board/Board'
 import ImageSlider from './components/ImageSlider/ImageSlider'
 
-const images = ['Image-1.jpg', 'Image-2.jpg', 'Image-3.jpg']
+const images = ['slider-1.jpg', 'slider-2.jpg', 'slider-3.jpg']
 export default function Home() {
   return (
     <div className="space-y-32 px-72">
@@ -133,7 +133,7 @@ export default function Home() {
           </div>
         </button>
       </div>
-      <div className="flex justify-center items-center h-screen">
+      <div className="">
         <ImageSlider images={images} />
       </div>
     </div>
