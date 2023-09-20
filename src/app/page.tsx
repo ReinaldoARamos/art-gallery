@@ -186,7 +186,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[url('/images/bg.jpg')] bg-cover">
-        <div className="flex justify-center items-center pt-6 pb-20">
+        <div className="flex justify-center items-center pt-6 pb-16">
           <form>
             <h1 className="text-center text-white text-3xl pb-3">
               Fique atualizado

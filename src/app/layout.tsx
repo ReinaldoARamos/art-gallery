@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Lato } from 'next/font/google'
 import Header from './components/Header/Header'
+import { Footer } from './components/Footer/Footer'
 
 const lato = Lato({ subsets: ['latin'], weight: '400' })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={lato.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
