@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Button } from './components/Button/Button'
 import { ArrowRightCircle } from 'lucide-react'
+import { Board } from './components/Board/Board'
 
 export default function Home() {
   return (
@@ -50,16 +51,45 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div>
+      <div className="flex flex-col">
         <h1 className="text-heading   item-center  font-bold text-Title  mb-3">
           Obras em destaque
         </h1>
         <div className="flex gap-5">
-          <div>oi</div>
-          <div>oi</div>
-          <div>oi</div>
-          <div>oi</div>
+          <Board
+            author="Ana Maria Silva"
+            height={315}
+            width={315}
+            name="Voo da liberdade"
+            src="/images\image.jpg"
+          />
+          <Board
+            author="Gustavo Alves"
+            height={315}
+            width={315}
+            name="Cidade em Movimento"
+            src="/images\image-1.jpg"
+          />
+          <Board
+            author="Diego Pires"
+            height={315}
+            width={315}
+            name="Dançando com as Cores"
+            src="/images\image-3.jpg"
+          />
+          <Board
+            author="Preiscilla Souza"
+            height={315}
+            width={315}
+            name="Melodia Urbana"
+            src="/images\image-2.jpg"
+          />
         </div>
+        <button className="flex   justify-center  text-base">
+          <div className="flex gap-3 items-center text-md">
+            Ver galeria completa <ArrowRightCircle className="h-5 w-5" />
+          </div>
+        </button>
       </div>
       <div>
         <h1 className="text-heading   item-center  font-bold text-Title  mb-3">

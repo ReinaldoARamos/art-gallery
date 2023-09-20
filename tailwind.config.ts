@@ -17,9 +17,12 @@ const config: Config = {
         base: 'rgba(101, 65, 13, 1)',
         Title: 'rgba(35, 21, 2, 1)',
         brown: 'rgba(90, 78, 60, 1)',
+        boardbrown: 'rgba(51, 36, 13, 1)',
+        boardgray: 'rgba(129, 119, 106, 1)',
       },
       fontSize: {
         heading: '2.8rem',
+        md: '1rem',
       },
     },
   },
