@@ -21,6 +21,7 @@ const config: Config = {
         boardgray: 'rgba(129, 119, 106, 1)',
         arrow: 'rgba(138, 87, 14, 1)',
         gray: 'rgba(206, 203, 199, 1)',
+        gray200: 'rgba(129, 119, 106, 1)',
       },
       fontSize: {
         heading: '2.8rem',
