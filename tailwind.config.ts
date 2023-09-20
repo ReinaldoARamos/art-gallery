@@ -19,6 +19,7 @@ const config: Config = {
         brown: 'rgba(90, 78, 60, 1)',
         boardbrown: 'rgba(51, 36, 13, 1)',
         boardgray: 'rgba(129, 119, 106, 1)',
+        arrow: 'rgba(138, 87, 14, 1)',
       },
       fontSize: {
         heading: '2.8rem',

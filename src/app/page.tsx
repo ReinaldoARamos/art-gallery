@@ -136,6 +136,46 @@ export default function Home() {
       <div className="">
         <ImageSlider images={images} />
       </div>
+      <div className="flex flex-col">
+        <h1 className="text-heading   item-center  font-bold text-Title  mb-3">
+          Artistas em Destaque
+        </h1>
+        <div className="flex gap-5">
+          <Board
+            author="Belo Horizonte/MG"
+            height={157}
+            width={316}
+            name="Ana Maria Silva"
+            src="/images\camila.jpg"
+          />
+          <Board
+            author="Florianópolis/SC"
+            height={157}
+            width={316}
+            name="Gustavo Alves"
+            src="/images\gustavo.jpg"
+          />
+          <Board
+            author="Rio De Janeiro/RJ"
+            height={157}
+            width={316}
+            name="Matheus Oliveira"
+            src="/images\matheus.jpg"
+          />
+          <Board
+            author="Recife/BA"
+            height={157}
+            width={316}
+            name="Carolina Martins"
+            src="/images\Camila.jpg"
+          />
+        </div>
+        <button className="flex   justify-center  text-base">
+          <div className="flex gap-3 items-center text-md">
+            Ver Todos os Artistas <ArrowRightCircle className="h-5 w-5" />
+          </div>
+        </button>
+      </div>
     </div>
   )
 }
