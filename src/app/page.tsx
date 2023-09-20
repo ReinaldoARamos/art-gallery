@@ -2,7 +2,9 @@ import Image from 'next/image'
 import { Button } from './components/Button/Button'
 import { ArrowRightCircle } from 'lucide-react'
 import { Board } from './components/Board/Board'
+import ImageSlider from './components/ImageSlider/ImageSlider'
 
+const images = ['Image-1.jpg', 'Image-2.jpg', 'Image-3.jpg']
 export default function Home() {
   return (
     <div className="space-y-32 px-72">
@@ -130,6 +132,9 @@ export default function Home() {
             Ver Todos os Artistas <ArrowRightCircle className="h-5 w-5" />
           </div>
         </button>
+      </div>
+      <div className="flex justify-center items-center h-screen">
+        <ImageSlider images={images} />
       </div>
     </div>
   )
