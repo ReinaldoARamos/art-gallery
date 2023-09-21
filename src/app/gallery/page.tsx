@@ -1,7 +1,7 @@
 'use client'
 import { ArrowRightCircle } from 'lucide-react'
 import { Board } from '../components/Board/Board'
-import { CaretCircleLeft, CaretLeft } from 'phosphor-react'
+import { CaretLeft, CaretRight } from 'phosphor-react'
 
 export default function Gallery() {
   return (
@@ -83,16 +83,17 @@ export default function Gallery() {
         </div>
       </div>
 
-      <div className="text-5xl  font-bold text-Title pt-10 flex justify-center">
+      <div className="text-5xl  font-bold text-Title pt-10 flex justify-center pb-10">
         Depoimentos
       </div>
 
-      <div className="w-full bg-zinc-200 py-7 px-72 flex items-center pt-11 pb-16 justify-between">
-        <div>
-          <CaretCircleLeft />
-        </div>
-        <div className="flex flex-col">
-          <div className=" text-center text-sm text-brown pb-5">
+      <div className="w-full bg-zinc-200 py-11 px-72 flex items-center   justify-between">
+        <button className="bg-arrow rounded-full p-3">
+          <CaretLeft className="h-5 w-5 text-white" />
+        </button>
+        <div className="flex flex-col px-96">
+          <div className="pb-4 text-Title text-7xl font-sans">``</div>
+          <div className="text-sm text-brown pb-5  ">
             Como artista urbano, vejo nas ruas um quadro em branco onde posso
             expressar minhas emoções, pensamentos e crenças. Por muitos anos,
             lutei para encontrar um lugar onde meus pares e eu pudéssemos
@@ -106,11 +107,11 @@ export default function Gallery() {
           </div>
           <div className="text-title text-xl">Ana Maria Silva</div>
         </div>
-        <div>
-          <CaretCircleLeft />
-        </div>
+        <button className="bg-arrow rounded-full p-3">
+          <CaretRight className="h-5 w-5 text-white" />
+        </button>
       </div>
-      <div>oi</div>
+      <div className="pt-16">oi</div>
     </>
   )
 }
