@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-
 const Testimonial = ({ testimonials }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -24,7 +23,8 @@ const Testimonial = ({ testimonials }) => {
         <CaretLeft className="h-5 w-5 text-white" />
       </button>
       <div className="flex flex-col px-96">
-        <div className="text-sm text-brown pb-5  ">
+        <div className="pb-4 bg-none text-Title text-7xl font-sans">´´</div>
+        <div className="text-sm text-brown pb-5 bg-none ">
           {testimonials[currentIndex].depoiment}
         </div>
         <div className="text-title text-xl">
