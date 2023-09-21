@@ -1,7 +1,7 @@
 'use client'
 import { ArrowRightCircle } from 'lucide-react'
 import { Board } from '../components/Board/Board'
-import { CaretLeft, CaretRight } from 'phosphor-react'
+import Testiominals from '../components/Testiominals/Testiominals'
 
 export default function Gallery() {
   return (
@@ -86,31 +86,26 @@ export default function Gallery() {
       <div className="text-5xl  font-bold text-Title pt-10 flex justify-center pb-10">
         Depoimentos
       </div>
-
-      <div className="w-full bg-zinc-200 py-11 px-72 flex items-center   justify-between">
-        <button className="bg-arrow rounded-full p-3">
-          <CaretLeft className="h-5 w-5 text-white" />
-        </button>
-        <div className="flex flex-col px-96">
-          <div className="pb-4 text-Title text-7xl font-sans">``</div>
-          <div className="text-sm text-brown pb-5  ">
-            Como artista urbano, vejo nas ruas um quadro em branco onde posso
-            expressar minhas emoções, pensamentos e crenças. Por muitos anos,
-            lutei para encontrar um lugar onde meus pares e eu pudéssemos
-            compartilhar nossas criações e experiências. Foi então que descobri
-            o Projeto Arte Concreta. Desde o início, fui atraído pela abordagem
-            única e inclusiva do site em relação à arte urbana. Aqui, todos os
-            tipos de artistas são bem-vindos, independentemente do seu estilo ou
-            nível de experiência. Aprendi muito com os tutoriais e dicas
-            compartilhados no site, o que me ajudou a aprimorar minhas
-            habilidades e expandir minha perspectiva artística.
-          </div>
-          <div className="text-title text-xl">Ana Maria Silva</div>
-        </div>
-        <button className="bg-arrow rounded-full p-3">
-          <CaretRight className="h-5 w-5 text-white" />
-        </button>
-      </div>
+      <Testiominals
+        testimonials={[
+          {
+            author: 'Ana Maria Vieira',
+            depoiment:
+              'Como artista urbano, vejo nas ruas um quadro em branco onde posso expressar minhas emoções, pensamentos e crenças. Por muitos anos, lutei para encontrar um lugar onde meus pares e eu pudéssemos compartilhar nossas criações e experiências. Foi então que descobri o Projeto Arte Concreta. Desde o início, fui atraído pela abordagem única e inclusiva do site em relação à arte urbana. Aqui, todos os tipos de artistas são bem-vindos, independentemente do seu estilo ou nível de experiência. Aprendi muito com os tutoriais e dicas compartilhados no site, o que me ajudou a aprimorar minhas habilidades e expandir minha perspectiva artística.',
+          },
+          {
+            author: 'Gustavo Freitas',
+            depoiment:
+              'O Projeto Arte Concreta foi um ponto de virada na minha trajetória artística, proporcionando uma plataforma inclusiva e inspiradora. Através dele, encontrei um espaço para compartilhar minhas criações, aprender com outros artistas e expandir minha perspectiva. Essa comunidade acolhedora e diversa redefiniu minha abordagem à arte urbana, abrindo portas para novas possibilidades e desafios. Cada tutorial e interação moldou meu estilo e aprimorou minhas habilidades, tornando o Projeto Arte Concreta não apenas um site, mas uma fonte de crescimento artístico contínuo que mudou profundamente minha vida na arte.',
+          },
+          {
+            author: 'Arthur do Val',
+            depoiment:
+              'O Projeto Arte Concreta foi um divisor de águas em minha jornada artística, proporcionando uma plataforma inclusiva e inspiradora. Através dele, encontrei um espaço para compartilhar minhas criações, aprender com outros artistas e expandir minha perspectiva. Essa comunidade acolhedora e diversa redefiniu minha abordagem à arte urbana, abrindo portas para novas possibilidades e desafios. Cada tutorial e interação moldou meu estilo e aprimorou minhas habilidades, tornando o Projeto Arte Concreta não apenas um site, mas uma fonte de crescimento artístico contínuo que mudou profundamente minha vida na arte.',
+          },
+          // Add more testimonials as needed
+        ]}
+      />
       <div className="pt-16">oi</div>
     </>
   )
