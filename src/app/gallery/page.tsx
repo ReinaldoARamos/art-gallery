@@ -2,6 +2,7 @@
 import { ArrowRightCircle } from 'lucide-react'
 import { Board } from '../components/Board/Board'
 import Testiominals from '../components/Testiominals/Testiominals'
+import { InterviewCard } from '../components/InterviewCard/InterviewCard'
 
 export default function Gallery() {
   return (
@@ -106,7 +107,12 @@ export default function Gallery() {
           // Add more testimonials as needed
         ]}
       />
-      <div className="pt-16">oi</div>
+      <div className="pt-16 flex justify-center items-center text-Title text-5xl pb-10">
+        Entrevistas
+      </div>
+
+      <InterviewCard />
+      <InterviewCard />
     </>
   )
 }
