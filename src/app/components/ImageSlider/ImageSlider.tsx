@@ -57,7 +57,7 @@ const ImageSlider = ({ images }: ImageSliderProps) => {
               className={`w-3 h-3 rounded-full   ${
                 index === currentImage
                   ? 'bg-arrow w-12 transition-all duration-300'
-                  : 'bg-gray-400 transition-all duration-300 '
+                  : 'bg-gray transition-all duration-300 '
               }`}
             />
           ))}
