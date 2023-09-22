@@ -28,12 +28,6 @@ const config: Config = {
         md: '1rem',
       },
     },
-    width: {
-      image: '40rem',
-    },
-    height: {
-      image: '22rem',
-    },
   },
   plugins: [],
 }

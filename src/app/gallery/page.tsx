@@ -107,12 +107,21 @@ export default function Gallery() {
           // Add more testimonials as needed
         ]}
       />
-      <div className="pt-16 flex justify-center items-center text-Title text-5xl pb-10">
-        Entrevistas
-      </div>
 
-      <InterviewCard />
-      <InterviewCard />
+      <div className=" flex flex-col px-72 pb-20 ">
+        <div className="pt-16 flex justify-center items-center text-Title text-5xl pb-10">
+          Entrevistas
+        </div>
+        <div className="flex justify-center  item-center gap-5">
+          <InterviewCard src="/images/Video-2.jpg" />
+          <InterviewCard src="/images/Video-2.jpg" />
+        </div>
+        <button className=" flex justify-end item-center pt-8 pr-2">
+          <div className="flex gap-3 items-center text-md">
+            Ver Todos os Artistas <ArrowRightCircle className="h-5 w-6" />
+          </div>
+        </button>
+      </div>
     </>
   )
 }
