@@ -10,8 +10,12 @@ export function ArtistsBoard() {
         height={157}
         className="object-cover pb-5"
       />
-      <div className="text-title text-2xl pb-3">Ane Maria Silva</div>
-      <div className="text-md text-brown">Belo Horizonte/MG</div>
+      <div className="text-title text-2xl pb-3 flex justify-center ">
+        Ane Maria Silva
+      </div>
+      <div className="text-md text-brown flex justify-center">
+        Belo Horizonte/MG
+      </div>
     </div>
   )
 }
