@@ -28,7 +28,11 @@ const config: Config = {
         md: '1rem',
       },
     },
+    gridTemplateColumns: {
+      app: 'minmax(53rem, 54rem) 1fr',
+    },
   },
+
   plugins: [],
 }
 export default config
