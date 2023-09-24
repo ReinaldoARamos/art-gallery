@@ -1,4 +1,5 @@
 import { ArrowRightCircle } from 'lucide-react'
+
 interface BlogLinkProps {
   title: string
   description: string
