@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { ArtistsBoard } from './ArtistBoard/ArtistBoard'
-import { ArrowCircleRight } from 'phosphor-react'
+
 import { ArrowRightCircle } from 'lucide-react'
 import { Tags } from '../components/Tags/Tags'
 
@@ -102,7 +102,7 @@ export default function Artists() {
                 <Tags label="Yarn Bombing" />
               </div>
             </div>
-            <div className="flex flex-col py-6 pl-6 pr-56 border border-gray300 rounded-md ">
+            <div className="flex flex-col py-6 pl-6 pr-56 border border-gray300 rounded-md -">
               <div className="pb-4 text-xl text-Title font-bold ">
                 Locais populares
               </div>
@@ -116,6 +116,52 @@ export default function Artists() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="bg-[url('/images/bg.jpg')] bg-cover mt-16">
+        <div className="flex justify-center items-center pt-20 pb-24">
+          <form>
+            <h1 className=" text-white text-3xl pb-3 font-light">
+              Quero divulgar minhas obras aqui
+            </h1>
+
+            <div className="flex flex-col pt-8 ">
+              <div className="flex gap-28">
+                <div>
+                  <span className="pb-1 text-zinc-50 font-semibold">
+                    Seu email
+                  </span>
+                  <div className="pb-10">
+                    <input
+                      type="email"
+                      placeholder="Seu melhor email"
+                      className="w-80 border border-zinc-100 rounded-md h-12 placeholder:pl-3 placeholder: text-gray200"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <span className="pb-1 text-zinc-50 font-semibold">
+                    Cidade/UF
+                  </span>
+                  <div className="pb-10">
+                    <input
+                      type="text"
+                      placeholder="Cidade/UF"
+                      className="w-80 border border-zinc-100 rounded-md h-12 placeholder:pl-3 placeholder: text-gray200"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              type="submit"
+              className=" bg-white text-base rounded-full flex justify-center items-center gap-2 px-12 py-4 font-bold"
+            >
+              {' '}
+              Quero me manter atualizado <ArrowRightCircle />
+            </button>
+          </form>
         </div>
       </div>
     </>
