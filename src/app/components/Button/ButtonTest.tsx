@@ -12,6 +12,8 @@ const button = tv({
       primary:
         'bg-base text-white hover:bg-arrow hover:font-bold transition duration-300',
       ghost: 'text-arrow hover:text-base transition duration-300',
+      light:
+        'bg-white text-base hover:bg-zinc-100 transition duration-300 hover:text-arrow',
     },
   },
   defaultVariants: { variant: 'primary' },

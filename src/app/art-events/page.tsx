@@ -173,21 +173,51 @@ export default function Events() {
         </div>
       </div>
       <div className="bg-base flex  justify-between   ">
-        <div className="flex flex-col py-20 pl-72 gap-">
+        <form className="flex flex-col py-20 pl-72 ">
           <h1 className="text-white text-5xl font-bold">
             Divulgue aqui o seu evento
           </h1>
-          <div className="flex  gap-28 pt-10">
+          <div className="grid  grid-cols-2  row- pt-10 gap-x-28 gap-y-7">
             <div className="flex flex-col  space-y-1.5 ">
               <span className="text-white font-semibold">Nome do evento</span>
-              <input className="h-12 w-80 rounded-md" type="text" />
+              <input
+                className="h-12 w-80 rounded-md placeholder:pl-3"
+                type="text"
+                placeholder="Insira o nome do evento"
+              />
             </div>
             <div className="flex flex-col  space-y-1.5 ">
               <span className="text-white font-semibold">Data</span>
-              <input className="h-12 w-80 rounded-md" type="date" />
+              <input
+                className="h-12 w-80 rounded-md placeholder:pl-3"
+                placeholder="Data do evento"
+              />
+            </div>
+            <div className="flex flex-col  space-y-1.5 ">
+              <span className="text-white font-semibold">Local</span>
+              <input
+                className="h-12 w-80 rounded-md placeholder:pl-3"
+                type="text"
+                placeholder="Local do Evento"
+              />
+            </div>
+            <div className="flex flex-col  space-y-1.5 ">
+              <span className="text-white font-semibold">
+                Foto de Divulgação
+              </span>
+              <input
+                className="h-12 w-80 rounded-md placeholder:pl-3"
+                placeholder="Insira a Foto"
+              />
+              <input type="file" id="photo" className="hidden" />
             </div>
           </div>
-        </div>
+          <div className="pt-16">
+            <Button variant="light">
+              Quero divulgar um evento <ArrowRightCircle className="h-6 w-6" />
+            </Button>
+          </div>
+        </form>
         <Image alt="" src="/images\image-37.jpg" width={645} height={559} />
       </div>
     </>
