@@ -23,6 +23,7 @@ const config: Config = {
         gray: 'rgba(206, 203, 199, 1)',
         gray200: 'rgba(129, 119, 106, 1)',
         gray300: '#81776A',
+        gray400: 'rgba(51, 36, 13, 1)',
       },
       fontSize: {
         heading: '2.8rem',
