@@ -2,8 +2,8 @@
 import Image from 'next/image'
 import { Button } from '../components/Button/ButtonTest'
 import { ArrowCircleRight } from 'phosphor-react'
-import { Board } from '../components/Board/Board'
 import { EventBoard } from '../components/EventsBoard/EventsBoard'
+
 import { ArrowRightCircle } from 'lucide-react'
 export default function Events() {
   return (
@@ -172,17 +172,23 @@ export default function Events() {
           </Button>
         </div>
       </div>
-      <div className="bg-base flex flex-col justify-center items-center  py-20  ">
-        <div className="flex flex-col justify-between">
+      <div className="bg-base flex  justify-between   ">
+        <div className="flex flex-col py-20 pl-72 gap-">
           <h1 className="text-white text-5xl font-bold">
             Divulgue aqui o seu evento
           </h1>
-          <div className="flex justify-between pt-10">
-            <div>aaa</div>
-            <div>aaa</div>
+          <div className="flex  gap-28 pt-10">
+            <div className="flex flex-col  space-y-1.5 ">
+              <span className="text-white font-semibold">Nome do evento</span>
+              <input className="h-12 w-80 rounded-md" type="text" />
+            </div>
+            <div className="flex flex-col  space-y-1.5 ">
+              <span className="text-white font-semibold">Data</span>
+              <input className="h-12 w-80 rounded-md" type="date" />
+            </div>
           </div>
-          <div>oi</div>
         </div>
+        <Image alt="" src="/images\image-37.jpg" width={645} height={559} />
       </div>
     </>
   )
