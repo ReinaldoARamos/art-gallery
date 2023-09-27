@@ -1,6 +1,7 @@
 import * as Tabs from '@radix-ui/react-tabs'
 
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/navigation'
 
 export interface TabsItemsProps {
   value: string
@@ -9,9 +10,15 @@ export interface TabsItemsProps {
 }
 
 export function TabItem({ value, title, isSelected }: TabsItemsProps) {
+  const router = useRouter()
+
+  function RouteTo() {
+    router.push(`/${value}`)
+  }
+
   return (
     <Tabs.Trigger value={value}>
-      <span>{title}</span>
+      <span onClick={() => RouteTo()}>{title}</span>
 
       {isSelected && (
         <motion.div
