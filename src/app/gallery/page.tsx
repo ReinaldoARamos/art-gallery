@@ -3,6 +3,7 @@ import { ArrowRightCircle } from 'lucide-react'
 import { Board } from '../components/Board/Board'
 import Testiominals from '../components/Testiominals/Testiominals'
 import { InterviewCard } from '../components/InterviewCard/InterviewCard'
+import { Button } from '../components/Button/ButtonTest'
 
 export default function Gallery() {
   return (
@@ -77,10 +78,12 @@ export default function Gallery() {
               src="/images\image-6.jpg"
             />
           </div>
-          <button className="flex gap-3 text-lg text-base justify-center w-full items-center pt-16">
-            Saiba mais sobre o projeto arte concreta{' '}
-            <ArrowRightCircle className="h-5 w-5" />
-          </button>
+          <div className="flex justify-center">
+            <Button variant="ghost">
+              Ver todas as obras
+              <ArrowRightCircle className="w-6 h-6" />
+            </Button>
+          </div>
         </div>
       </div>
 
@@ -117,9 +120,9 @@ export default function Gallery() {
           <InterviewCard src="/images/Video-2.jpg" />
         </div>
         <button className=" flex justify-end item-center pt-8 pr-2">
-          <div className="flex gap-3 items-center text-md">
-            Ver Todos os Artistas <ArrowRightCircle className="h-5 w-6" />
-          </div>
+          <Button variant="ghost">
+            Ver todas as entrevistas <ArrowRightCircle className="w-6 h-6" />
+          </Button>
         </button>
       </div>
     </>

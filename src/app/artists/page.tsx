@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import { ArtistsBoard } from './ArtistBoard/ArtistBoard'
+import { ArtistsBoard } from '../components/ArtistBoard/ArtistBoard'
 
 import { ArrowRightCircle } from 'lucide-react'
 import { Tags } from '../components/Tags/Tags'

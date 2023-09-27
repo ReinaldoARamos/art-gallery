@@ -1,10 +1,11 @@
 import Image from 'next/image'
-import { Button } from './components/Button/Button'
+
 import { ArrowRightCircle } from 'lucide-react'
 import { Board } from './components/Board/Board'
 import ImageSlider from './components/ImageSlider/ImageSlider'
 import { Tags } from './components/Tags/Tags'
 import { BlogLink } from './components/BlogLink/BlogLink'
+import { Button } from './components/Button/ButtonTest'
 
 const images = ['slider-1.jpg', 'slider-2.jpg', 'slider-3.jpg']
 export default function Home() {
@@ -26,7 +27,9 @@ export default function Home() {
             </p>
             <div>
               {' '}
-              <Button text={'Ver Galeria de Arte'} icon={ArrowRightCircle} />
+              <Button>
+                Ver Galeria de Arte <ArrowRightCircle className="h-6 w-6" />
+              </Button>
             </div>
           </div>
           <Image src="/images\Quadro.jpg" alt="" width={540} height={375} />
@@ -90,11 +93,9 @@ export default function Home() {
               src="/images\image-2.jpg"
             />
           </div>
-          <button className="flex   justify-center  text-base">
-            <div className="flex gap-3 items-center text-md">
-              Ver galeria completa <ArrowRightCircle className="h-5 w-5" />
-            </div>
-          </button>
+          <Button variant="ghost">
+            Ver galeria completa <ArrowRightCircle className="h-6 w-6" />
+          </Button>
         </div>
         <div className="flex flex-col">
           <h1 className="text-heading   item-center  font-bold text-Title  mb-3">
@@ -130,11 +131,10 @@ export default function Home() {
               src="/images\Camila.jpg"
             />
           </div>
-          <button className="flex   justify-center  text-base">
-            <div className="flex gap-3 items-center text-md">
-              Ver Todos os Artistas <ArrowRightCircle className="h-5 w-5" />
-            </div>
-          </button>
+          <Button variant="ghost">
+            Ver Todos os nossos artistas{' '}
+            <ArrowRightCircle className="h-6 w-6" />
+          </Button>
         </div>
         <div className="">
           <ImageSlider images={images} />
@@ -204,13 +204,11 @@ export default function Home() {
                   className="w-full border border-zinc-100 rounded-md h-12 placeholder:pl-3 placeholder: text-gray200"
                 />
               </div>
-              <button
-                type="submit"
-                className=" bg-white text-base rounded-full flex justify-center items-center gap-2 px-12 py-4 font-bold"
-              >
-                {' '}
-                Quero me manter atualizado <ArrowRightCircle />
-              </button>
+
+              <Button variant="light">
+                Quero me manter atualizado{' '}
+                <ArrowRightCircle className="h-6 w-6" />
+              </Button>
             </div>
           </form>
         </div>

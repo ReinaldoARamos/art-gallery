@@ -3,7 +3,6 @@
 import * as Tabs from '@radix-ui/react-tabs'
 import { TabItem } from './TabItem'
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
 
 export function HeaderTabs() {
   const [currentTab, setCurrentTab] = useState('/')
