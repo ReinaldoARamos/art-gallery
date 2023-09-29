@@ -9,8 +9,15 @@ export default function AllArtists() {
     <>
       <div className="bg-[url('/images/artist-banner.png')] bg-cover h-64 "></div>
       <div className="px-72 pt-7">
-        <Directory />
-        <SearchBar />
+        <Directory path1="Artistas" path2=" Todos os artistas" />
+        <SearchBar
+          input1="Encontre um artista"
+          placeholder1="Nome do artista"
+          input2="Filtrar por local"
+          placeholder2="Selecine um local"
+          input3="Filtar por estilo"
+          placeholder3="Selecione um estilo"
+        />
         <h1 className="text-title  font-bold py-14">Todos os artistas</h1>
         <div className="grid grid-cols-3">
           <ArtistsBoard

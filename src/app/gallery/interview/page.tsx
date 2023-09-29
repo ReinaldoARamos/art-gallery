@@ -9,8 +9,15 @@ export default function Intervirw() {
     <>
       <div className="bg-[url('/images/inteview-banner.png')] bg-cover h-64 "></div>
       <div className="px-72 pt-7 ">
-        <Directory />
-        <SearchBar />
+        <Directory path1="Galeria" path2="Todas as entrevistas" />
+        <SearchBar
+          input1={'Selecione uma entrevista'}
+          input2={'Filtrar por artista'}
+          input3={'Filtrar por data'}
+          placeholder1={'Nome da entrevista'}
+          placeholder2={'Selecione um artista'}
+          placeholder3={'Selecione uma data'}
+        />
         <div className="pt-14">
           <h1 className="text-title font-bold text-4xl pb-8">
             Todas as entrevistas

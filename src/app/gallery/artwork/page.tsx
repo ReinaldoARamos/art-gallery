@@ -10,10 +10,17 @@ export default function Artists() {
       <div className="bg-[url('/images/artwork-banner.jpg')] bg-cover h-64 "></div>
       <div className="px-72">
         <div className="pt-7 pb-14">
-          <Directory />
-          <SearchBar />
+          <Directory path1="Galeria" path2="Todos as obras" />
+          <SearchBar
+            input1="Encontre uma obra"
+            placeholder1="Nome da obra"
+            input2="Filtrar por artista"
+            placeholder2="Selecione um artista"
+            input3="Filtrar por estilo"
+            placeholder3="Selecione um Estilo"
+          />
         </div>
-        <h1 className="text-title text-4xl pb-9">Todos os artistas</h1>
+        <h1 className="text-title text-4xl pb-9">Todos as Obras</h1>
         <div className="grid grid-cols-4 gap-6">
           <Board
             author="Diego Pires"
