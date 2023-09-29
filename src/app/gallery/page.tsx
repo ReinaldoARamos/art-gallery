@@ -4,8 +4,14 @@ import { Board } from '../components/Board/Board'
 import Testiominals from '../components/Testiominals/Testiominals'
 import { InterviewCard } from '../components/InterviewCard/InterviewCard'
 import { Button } from '../components/Button/ButtonTest'
+import { useRouter } from 'next/navigation'
 
 export default function Gallery() {
+  const router = useRouter()
+
+  function RedirectTo(link: string) {
+    router.push(`/gallery/${link}`)
+  }
   return (
     <>
       <div className="bg-[url('/images/banner.jpg')] bg-cover pt-32 pb-72 ">
@@ -79,7 +85,7 @@ export default function Gallery() {
             />
           </div>
           <div className="flex justify-center">
-            <Button variant="ghost">
+            <Button variant="ghost" onClick={() => RedirectTo(`artwork`)}>
               Ver todas as obras
               <ArrowRightCircle className="w-6 h-6" />
             </Button>
@@ -120,7 +126,7 @@ export default function Gallery() {
           <InterviewCard src="/images/Video-2.jpg" />
         </div>
         <button className=" flex justify-end item-center pt-8 pr-2">
-          <Button variant="ghost">
+          <Button variant="ghost" onClick={() => RedirectTo(`interview`)}>
             Ver todas as entrevistas <ArrowRightCircle className="w-6 h-6" />
           </Button>
         </button>

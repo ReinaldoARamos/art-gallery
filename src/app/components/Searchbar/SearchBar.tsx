@@ -11,7 +11,7 @@ export function SearchBar() {
         <div className="flex gap-3">
           <input
             placeholder="Nome da obra"
-            className="p-3 w-[32.5rem] border border-zinc-300 rounded-md"
+            className="p-3 w-[32.5rem] border border-zinc-300 rounded-md focus:outline-none"
           />
           <Button>
             <ArrowCircleRight className="h-6 w-6" />
@@ -24,7 +24,10 @@ export function SearchBar() {
           Filtrar por artista
         </h3>
         <div className="flex items-center justify-center  border border-zinc-300 rounded-md">
-          <input placeholder="Selecione um artista" className="p-3 w-80" />
+          <input
+            placeholder="Selecione um artista"
+            className="p-3 w-80 focus:outline-none"
+          />
           <CaretDown className="h-6 w-6" />
         </div>
       </div>
@@ -33,7 +36,10 @@ export function SearchBar() {
           Filtrar por data
         </h3>
         <div className="flex items-center justify-center  border border-zinc-300 rounded-md">
-          <input placeholder="Selecione uma data" className="p-3 w-80" />
+          <input
+            placeholder="Selecione uma data"
+            className="p-3 w-80 focus:outline-none"
+          />
           <CaretDown className="h-6 w-6" />
         </div>
       </div>
