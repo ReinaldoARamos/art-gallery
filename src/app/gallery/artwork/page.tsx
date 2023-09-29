@@ -2,6 +2,7 @@
 import { Board } from '@/app/components/Board/Board'
 import { Button } from '@/app/components/Button/ButtonTest'
 import { Directory } from '@/app/components/Directory/Directory'
+import { NextPageButton } from '@/app/components/NextPageButton/NextPageButton'
 import { SearchBar } from '@/app/components/Searchbar/SearchBar'
 import { ArrowLeftCircle, ArrowRightCircle } from 'lucide-react'
 
@@ -99,30 +100,7 @@ export default function Artists() {
           src="/images\obras\image-11.png"
         />
       </div>
-      <div className="flex gap-5 justify-center items-center">
-        <Button>
-          <ArrowLeftCircle className="h-6 w-6" />
-          Anterior
-        </Button>
-        <button className="px-4 py-3 bg-base text-white  hover:bg-arrow hover:font-bold transition duration-300 rounded-full">
-          1
-        </button>
-
-        <button className="px-4 py-3 bg-base text-white  hover:bg-arrow hover:font-bold transition duration-300 rounded-full">
-          2
-        </button>
-        <button className="px-4 py-3 bg-base text-white  hover:bg-arrow hover:font-bold transition duration-300 rounded-full">
-          3
-        </button>
-        <div className="text-arrow">...</div>
-        <button className="px-4 py-3 bg-base text-white hover:bg-arrow hover:font-bold transition duration-300 rounded-full">
-          15
-        </button>
-        <Button>
-          Próximo
-          <ArrowRightCircle className="h-6 w-6" />
-        </Button>
-      </div>
+      <NextPageButton />
     </div>
   )
 }

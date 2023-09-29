@@ -7,7 +7,7 @@ interface InterviewProps {
 export function InterviewCard({ src }: InterviewProps) {
   return (
     <>
-      <div className="flex flex-col pb-7">
+      <div className=" pb-7">
         <div className="bg-[url('/images/Video-1.jpg')] bg-cover w-[40rem] h-[22rem] flex flex-col justify-between">
           <InterViewControsl />
         </div>
