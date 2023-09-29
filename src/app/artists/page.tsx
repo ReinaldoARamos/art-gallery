@@ -4,8 +4,10 @@ import { ArtistsBoard } from '../components/ArtistBoard/ArtistBoard'
 
 import { ArrowRightCircle } from 'lucide-react'
 import { Tags } from '../components/Tags/Tags'
+import { UseRedirect } from '../hooks/useRedirect'
 
 export default function Artists() {
+  const redirectTo = UseRedirect()
   return (
     <>
       <div className="flex flex-col pt-12 space-y-12 justify-center items-center pb-24 ">
@@ -70,7 +72,10 @@ export default function Artists() {
             />
           </div>
           <button className=" flex justify-center item-center pt-8 pr-2">
-            <div className="flex gap-3 items-center text-md ">
+            <div
+              className="flex gap-3 items-center text-md "
+              onClick={() => redirectTo('/artists/all-artists')}
+            >
               Ver Todos os Artistas <ArrowRightCircle className="h-5 w-6" />
             </div>
           </button>
