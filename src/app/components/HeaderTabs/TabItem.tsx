@@ -11,6 +11,7 @@ export interface TabsItemsProps {
 
 export function TabItem({ value, title, isSelected }: TabsItemsProps) {
   const redirectTo = UseRedirect()
+
   return (
     <Tabs.Trigger value={value}>
       <span onClick={() => redirectTo(`/${value}`)}>{title}</span>
