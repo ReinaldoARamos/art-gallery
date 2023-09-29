@@ -1,7 +1,7 @@
+import { UseRedirect } from '@/app/hooks/useRedirect'
 import * as Tabs from '@radix-ui/react-tabs'
 
 import { motion } from 'framer-motion'
-import { useRouter } from 'next/navigation'
 
 export interface TabsItemsProps {
   value: string
@@ -10,15 +10,10 @@ export interface TabsItemsProps {
 }
 
 export function TabItem({ value, title, isSelected }: TabsItemsProps) {
-  const router = useRouter()
-
-  function RouteTo() {
-    router.push(`/${value}`)
-  }
-
+  const redirectTo = UseRedirect()
   return (
     <Tabs.Trigger value={value}>
-      <span onClick={() => RouteTo()}>{title}</span>
+      <span onClick={() => redirectTo(`/${value}`)}>{title}</span>
 
       {isSelected && (
         <motion.div

@@ -1,11 +1,8 @@
 'use client'
 import { Board } from '@/app/components/Board/Board'
-import { Button } from '@/app/components/Button/ButtonTest'
 import { Directory } from '@/app/components/Directory/Directory'
 import { NextPageButton } from '@/app/components/NextPageButton/NextPageButton'
 import { SearchBar } from '@/app/components/Searchbar/SearchBar'
-import { ArrowLeftCircle, ArrowRightCircle } from 'lucide-react'
-import Image from 'next/image'
 
 export default function Artists() {
   return (
