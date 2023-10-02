@@ -38,7 +38,7 @@ export default function Events() {
         <div className="text-3xl text-gray300 flex justify-center">
           Exposições
         </div>
-        <div className="flex gap-5 pt-8">
+        <div className="flex justify-center items-center gap-5 pt-8">
           <EventBoard
             src="/images\workshop-1.png"
             width={315}
@@ -76,15 +76,18 @@ export default function Events() {
             name="Concrete Canvas"
           />
         </div>
-        <div className="flex justify-center pt-6 group">
-          <Button variant="ghost">
+        <div className="flex justify-center pt-6 group ">
+          <Button
+            variant="ghost"
+            onClick={() => RedirectTo('/art-events/all-expositions')}
+          >
             Ver Outros Eventos <ArrowRightCircle className="h-6 w-6  " />
           </Button>
         </div>
         <div className="text-3xl text-gray300 flex justify-center pt-8">
           Workshops
         </div>
-        <div className="flex gap-5 pt-8">
+        <div className="flex gap-5 pt-8 justify-center">
           <EventBoard
             src="/images\workshop-5.png"
             width={315}
@@ -123,14 +126,17 @@ export default function Events() {
           />
         </div>
         <div className="flex justify-center pt-6 group">
-          <Button variant="ghost">
+          <Button
+            variant="ghost"
+            onClick={() => RedirectTo('/art-events/all-workshops')}
+          >
             Ver Outros Workshops <ArrowRightCircle className="h-6 w-6  " />
           </Button>
         </div>
-        <div className="text-3xl text-gray300 flex justify-center">
+        <div className="text-3xl text-gray300 flex pt-6 justify-center">
           Festivais
         </div>
-        <div className="flex gap-5 pt-8">
+        <div className="flex gap-5 pt-8 justify-center">
           <EventBoard
             src="/images\festival-1.png"
             width={315}
