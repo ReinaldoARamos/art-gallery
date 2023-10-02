@@ -19,12 +19,14 @@ export function EventBoard({
   hour,
 }: BoardProps) {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col ">
       <Image src={src} alt="" width={width} height={height} className=" pb-6" />
-      <span className="pb-3 text-boardbrown text-2xl font-bold">{name}</span>
-      <span className="text-brown text-md">Data: {date}</span>
-      <span className="text-brown text-md">Horário: {hour}</span>
-      <span className="text-brown text-md">Local: {local}</span>
+      <div className="flex flex-col  items-center">
+        <span className="pb-3 text-boardbrown text-2xl font-bold">{name}</span>
+        <span className="text-brown text-md">Data: {date}</span>
+        <span className="text-brown text-md">Horário: {hour}</span>
+        <span className="text-brown text-md">Local: {local}</span>
+      </div>
     </div>
   )
 }

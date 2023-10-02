@@ -5,7 +5,9 @@ import { ArrowCircleRight } from 'phosphor-react'
 import { EventBoard } from '../components/EventsBoard/EventsBoard'
 
 import { ArrowRightCircle } from 'lucide-react'
+import { UseRedirect } from '../hooks/useRedirect'
 export default function Events() {
+  const RedirectTo = UseRedirect()
   return (
     <>
       <div className="px-72 pt-14">
@@ -167,7 +169,10 @@ export default function Events() {
           />
         </div>
         <div className="flex justify-center pt-6 group">
-          <Button variant="ghost">
+          <Button
+            variant="ghost"
+            onClick={() => RedirectTo('/art-events/all-events')}
+          >
             Ver Outros Festivais <ArrowRightCircle className="h-6 w-6  " />
           </Button>
         </div>
