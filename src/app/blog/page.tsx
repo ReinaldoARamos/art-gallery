@@ -5,8 +5,10 @@ import { Video } from '../components/Video/Video'
 import { Button } from '../components/Button/ButtonTest'
 import { Articles } from '../components/Articles/Articles'
 import { Questions } from '../components/Questions/Questions'
+import { UseRedirect } from '../hooks/useRedirect'
 
 export default function Blog() {
+  const RedirectTo = UseRedirect()
   return (
     <>
       <div className="bg-[url('/images/Blog-Banner.png')] bg-cover pt-32 pb-72 ">
@@ -18,10 +20,12 @@ export default function Blog() {
         <div className="pt-8 flex justify-center text-Title text-5xl pb-12">
           História do grafite e a arte de rua
         </div>
-        <Video />
+        <div className="flex justify-center item-center">
+          <Video />
+        </div>
         <div className="flex justify-center pt-8">
           {' '}
-          <Button variant="ghost">
+          <Button variant="ghost" onClick={() => RedirectTo('blog/history')}>
             Saber mais sobre a história <ArrowCircleRight className="w-6 h-6" />
           </Button>
         </div>
@@ -56,7 +60,7 @@ export default function Blog() {
             }
           />
         </div>
-        <Button variant="articles">
+        <Button variant="articles" onClick={() => RedirectTo('blog/articles')}>
           Ler mais
           <ArrowCircleRight
             className="h-6 w-6 fill  text-black fill"
@@ -84,7 +88,7 @@ export default function Blog() {
             }
           />
         </div>
-        <Button variant="articles">
+        <Button variant="articles" onClick={() => RedirectTo('blog/tutorials')}>
           Ver todos os tutoriais
           <ArrowCircleRight
             className="h-6 w-6 fill  text-black fill"
