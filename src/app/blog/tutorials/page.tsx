@@ -7,10 +7,10 @@ import { NextPageButton } from '@/app/components/NextPageButton/NextPageButton'
 import { Tags } from '@/app/components/Tags/Tags'
 import { ArrowCircleRight } from 'phosphor-react'
 
-export default function Articles() {
+export default function Tutorials() {
   return (
     <>
-      <div className="bg-[url('/images/artist-banner.png')] bg-cover h-64 " />
+      <div className="bg-[url('/images/tutorial-banner.png')] bg-cover h-64 " />
       <div className="px-72 pt-7">
         <Directory path1="Blog" path2="Tutoriais" />
 
@@ -23,7 +23,7 @@ export default function Articles() {
               title={'A Arte Viva das Ruas'}
               date={'30/05/2023'}
               article={
-                'De norte a sul e de leste a oeste, uma coisa que você não deixará de descobrir em todo o Brasil em quase todas as ruas, há tags, desenhos, graffitis e pinturas nas paredes. O Brasil é conhecido mundialmente pela sua street art. Nas ruas brasileiras podemos encontrar tags, desenhos, grafites, pinturas de parede, lambe-lambe, stickers, é uma infinidade de intervenções urbanas provocadas por artistas das mais variadas técnicas.'
+                'Este tutorial abrangente guiará você, passo a passo, através do complexo e vibrante mundo da arte de rua. Desde o planejamento e design até técnicas e dicas de segurança, estamos aqui para ajudá-lo a expressar a sua voz através da arte mais democrática que existe.'
               }
             />
             <ArticlesPost
@@ -32,7 +32,7 @@ export default function Articles() {
               title={'Expressando-se na Cidade'}
               date={'30/05/2023'}
               article={
-                'É um tipo de arte encontrada nos espaços urbanos. Manifesta-se por meio de intervenções, performances, grafite, teatro, dentre outras. Essas ações artísticas ocorrem em ambientes públicos e interagem diretamente com os indivíduos. Geralmente, usam como suporte os grandes centros urbanos, onde há intensa circulação de pessoas e diversidade cultural. Dessa forma, os cidadãos acabam se deparando com a arte sem precisar ir até centros culturais.'
+                'Nesta postagem de blog, compartilharemos dicas valiosas para artistas emergentes que querem mergulhar no mundo vibrante e expressivo da arte de rua. Desde a escolha do material até o desenvolvimento de seu estilo único, temos tudo o que você precisa para começar.'
               }
             />
           </div>

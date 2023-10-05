@@ -10,7 +10,7 @@ import { ArrowCircleRight } from 'phosphor-react'
 export default function Articles() {
   return (
     <>
-      <div className="bg-[url('/images/artist-banner.png')] bg-cover h-64 " />
+      <div className="bg-[url('/images/articles-banner.png')] bg-cover h-64 " />
       <div className="px-72 pt-7">
         <Directory path1="Blog" path2="Artigos" />
 
