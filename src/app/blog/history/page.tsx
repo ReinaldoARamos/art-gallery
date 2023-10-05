@@ -13,7 +13,7 @@ export default function History() {
     <>
       <div className="bg-[url('/images/history-banner.png')] bg-cover h-64 " />
       <div className="px-72 pt-7">
-        <Directory path1="Blog" path2="Tutoriais" />
+        <Directory path1="Blog" path2="Historia do grafite" />
         <div className="space-y-1">
           <span>Encontre um tutorial</span>
           <div className="flex gap-5">
