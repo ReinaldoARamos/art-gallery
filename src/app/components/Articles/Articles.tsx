@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Button } from '../Button/ButtonTest'
 import { ArrowRightCircle } from 'lucide-react'
+import { UseRedirect } from '@/app/hooks/useRedirect'
 
 interface ArticlesProps {
   src: string
@@ -16,6 +17,7 @@ export function Articles({
   title,
   author,
 }: ArticlesProps) {
+  const RedirectTo = UseRedirect()
   return (
     <div className="flex gap-5">
       <Image alt="" src={src} width={760} height={364} />
@@ -27,7 +29,12 @@ export function Articles({
         </div>
         <div className="text-md text-brown">{description}</div>
         <div className="pt-4">
-          <Button variant="lightwithborder">
+          <Button
+            variant="lightwithborder"
+            onClick={() => {
+              RedirectTo('/blog/post')
+            }}
+          >
             Ler mais <ArrowRightCircle />
           </Button>
         </div>

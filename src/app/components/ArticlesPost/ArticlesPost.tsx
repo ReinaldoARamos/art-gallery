@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Button } from '../Button/ButtonTest'
 import { ArrowCircleRight } from 'phosphor-react'
 import { title } from 'process'
+import { UseRedirect } from '@/app/hooks/useRedirect'
 
 interface ArticlePostProps {
   src: string
@@ -18,6 +19,7 @@ export function ArticlesPost({
   src,
   title,
 }: ArticlePostProps) {
+  const RedirectTo = UseRedirect()
   return (
     <div className="flex gap-5  ">
       <Image alt="" src={src} width={312} height={365} />
@@ -35,7 +37,12 @@ export function ArticlesPost({
           </div>
         </div>
         <div>
-          <Button variant="lightwithborder">
+          <Button
+            variant="lightwithborder"
+            onClick={() => {
+              RedirectTo('/blog/post')
+            }}
+          >
             leia mais <ArrowCircleRight className="h-6 w-6" />
           </Button>
         </div>
