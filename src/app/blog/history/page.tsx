@@ -1,11 +1,9 @@
 'use client'
 
-import { ArticlesPost } from '@/app/components/ArticlesPost/ArticlesPost'
 import { Button } from '@/app/components/Button/ButtonTest'
 import { Directory } from '@/app/components/Directory/Directory'
 import { InterviewCard } from '@/app/components/InterviewCard/InterviewCard'
 import { NextPageButton } from '@/app/components/NextPageButton/NextPageButton'
-import { Tags } from '@/app/components/Tags/Tags'
 import { ArrowCircleRight } from 'phosphor-react'
 
 export default function History() {

@@ -1,10 +1,6 @@
 import { InterViewControsl } from './InterViewControls'
 
-interface InterviewProps {
-  src?: string
-}
-
-export function InterviewCard({ src }: InterviewProps) {
+export function InterviewCard() {
   return (
     <>
       <div className=" pb-7">

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Button } from '../Button/ButtonTest'
 import { ArrowCircleRight } from 'phosphor-react'
-import { title } from 'process'
+
 import { UseRedirect } from '@/app/hooks/useRedirect'
 
 interface ArticlePostProps {

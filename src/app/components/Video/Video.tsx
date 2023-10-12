@@ -1,10 +1,6 @@
 import { InterViewControsl } from '../InterviewCard/InterViewControls'
 
-interface InterviewProps {
-  src?: string
-}
-
-export function Video({ src }: InterviewProps) {
+export function Video() {
   return (
     <>
       <div className="flex flex-col">

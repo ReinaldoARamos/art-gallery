@@ -1,5 +1,5 @@
 'use client'
-import { ArrowCircleRight, Question } from 'phosphor-react'
+import { ArrowCircleRight } from 'phosphor-react'
 
 import { Video } from '../components/Video/Video'
 import { Button } from '../components/Button/ButtonTest'

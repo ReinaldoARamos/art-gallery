@@ -3,7 +3,7 @@ import { Directory } from '@/app/components/Directory/Directory'
 import { InterviewCard } from '@/app/components/InterviewCard/InterviewCard'
 import { NextPageButton } from '@/app/components/NextPageButton/NextPageButton'
 import { SearchBar } from '@/app/components/Searchbar/SearchBar'
-import Image from 'next/image'
+
 export default function Intervirw() {
   return (
     <>

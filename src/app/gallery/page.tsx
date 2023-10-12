@@ -4,7 +4,7 @@ import { Board } from '../components/Board/Board'
 import Testiominals from '../components/Testiominals/Testiominals'
 import { InterviewCard } from '../components/InterviewCard/InterviewCard'
 import { Button } from '../components/Button/ButtonTest'
-import { useRouter } from 'next/navigation'
+
 import { UseRedirect } from '../hooks/useRedirect'
 
 export default function Gallery() {
@@ -123,8 +123,8 @@ export default function Gallery() {
           Entrevistas
         </div>
         <div className="flex justify-center  item-center gap-5">
-          <InterviewCard src="/images/Video-2.jpg" />
-          <InterviewCard src="/images/Video-2.jpg" />
+          <InterviewCard />
+          <InterviewCard />
         </div>
         <button className=" flex justify-end item-center pt-8 pr-2">
           <Button

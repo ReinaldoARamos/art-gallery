@@ -1,16 +1,9 @@
 'use client'
-import { Board } from '@/app/components/Board/Board'
-import { Button } from '@/app/components/Button/ButtonTest'
 import { Directory } from '@/app/components/Directory/Directory'
-import { InterviewCard } from '@/app/components/InterviewCard/InterviewCard'
-import Testiominals from '@/app/components/Testiominals/Testiominals'
-import { UseRedirect } from '@/app/hooks/useRedirect'
-import { ArrowRightCircle } from 'lucide-react'
+
 import Image from 'next/image'
 
 export default function Gallery() {
-  const redirectTo = UseRedirect()
-
   return (
     <>
       <div className="bg-[url('/images/our-mission.png')] bg-cover pt-32 pb-72 ">

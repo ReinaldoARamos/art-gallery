@@ -1,5 +1,5 @@
 import { Copyright, Facebook, Instagram, Twitter } from 'lucide-react'
-import Logo from '../Header/Logo'
+
 import { HeaderTabs } from '../HeaderTabs'
 import FooterLogo from './FooterLogo'
 
