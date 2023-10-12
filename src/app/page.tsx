@@ -151,12 +151,12 @@ export default function Home() {
         <div className="">
           <ImageSlider images={images} />
         </div>
-        <div className="grid grid-cols-2">
+        <div className="lg:grid lg:grid-cols-2 flex flex-col ">
           <div className="space-y-8">
-            <h1 className="text-heading   item-center  font-bold text-Title  mb-9">
+            <h1 className="text-heading  flex justify-center items-center  item-center  font-bold text-Title  mb-9">
               Conheça nosso blog
             </h1>
-            <div className="text-md text-brown">
+            <div className="text-md text-brown flex items-center justify-center">
               Venha conhecer o blog Arte Concreta, um espaço dedicado
               <br />à celebração e exploração da arte de rua, grafite e outras
               <br />
@@ -164,15 +164,17 @@ export default function Home() {
               <br />a criatividade e o espírito revolucionário das nossas
               cidades.
             </div>
-            <div className="flex flex-wrap gap-3  max-w-lg">
-              <Tags label="Obras de arte" />
-              <Tags label="História da Arte Urbana" />
-              <Tags label="Opniões e críticas" />
-              <Tags label="Cultura Urbana" />
-              <Tags label="Stencil" />
+            <div className="flex justify-center items-center">
+              <div className="flex flex-wrap gap-3  max-w-lg  ">
+                <Tags label="Obras de arte" />
+                <Tags label="História da Arte Urbana" />
+                <Tags label="Opniões e críticas" />
+                <Tags label="Cultura Urbana" />
+                <Tags label="Stencil" />
+              </div>
             </div>
             <button className="flex   justify-center  text-base">
-              <div className="flex gap-3 items-center text-md">
+              <div className="flex gap-3 items-center text-md hidden">
                 Acompanhar o blog <ArrowRightCircle className="h-5 w-5" />
               </div>
             </button>
