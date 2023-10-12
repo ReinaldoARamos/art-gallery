@@ -1,6 +1,5 @@
 import { Copyright, Facebook, Instagram, Twitter } from 'lucide-react'
 
-import { HeaderTabs } from '../HeaderTabs'
 import FooterLogo from './FooterLogo'
 
 export function Footer() {
