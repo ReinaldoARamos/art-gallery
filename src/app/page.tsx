@@ -71,7 +71,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="lg:flex lg:flex-col hidden">
           <h1 className="text-heading   item-center  font-bold text-Title  mb-3">
             Obras em destaque
           </h1>
@@ -109,7 +109,7 @@ export default function Home() {
             Ver galeria completa <ArrowRightCircle className="h-6 w-6" />
           </Button>
         </div>
-        <div className="flex flex-col">
+        <div className="lg:flex lg:flex-col hidden">
           <h1 className="text-heading   item-center  font-bold text-Title  mb-3">
             Artistas em Destaque
           </h1>
@@ -148,7 +148,7 @@ export default function Home() {
             <ArrowRightCircle className="h-6 w-6" />
           </Button>
         </div>
-        <div className="">
+        <div className="hidden">
           <ImageSlider images={images} />
         </div>
         <div className="lg:grid lg:grid-cols-2 flex flex-col ">
