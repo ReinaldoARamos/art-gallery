@@ -11,37 +11,49 @@ const images = ['slider-1.jpg', 'slider-2.jpg', 'slider-3.jpg']
 export default function Home() {
   return (
     <>
-      <div className="space-y-32 px-72">
-        <div className="mt-20   flex">
-          <div className="space-y-14 flex flex-col j pr-56">
-            <h1 className="text-heading   item-center  font-bold text-Title  ">
-              <div>Dismitificando a arte urbana</div>
-              <div>e o grafite</div>
+      <div className="space-y-32   px-6 lg:px-72">
+        <div className="mt-20   flex flex-col lg:flex-row   items-center justify-center">
+          <div className="space-y-14  j lg:pr-56  flex flex-col   ">
+            <h1 className="text-heading  font-bold text-Title  ">
+              Dismitificando a arte urbana
             </h1>
-            <p className="text-brown  text-2xl">
+            <p className="text-brown  text-justify text-2xl">
               Seja você um artista, um amante da arte ou
               <br />
               simplesmente alguém curioso sobre o universo da
               <br />
               arte de rua e do grafite, este espaço é seu
             </p>
-            <div>
+            <div className="flex justify-center items-center">
               {' '}
               <Button>
                 Ver Galeria de Arte <ArrowRightCircle className="h-6 w-6" />
               </Button>
             </div>
           </div>
-          <Image src="/images\Quadro.jpg" alt="" width={540} height={375} />
+          <div className="flex items-center justify-center pt-6">
+            {' '}
+            <Image src="/images\Quadro.jpg" alt="" width={540} height={375} />
+          </div>
         </div>
-        <div className="flex">
-          <Image src="/images\Quadro2.jpg" alt="" width={540} height={340} />
-          <div className="flex flex-col pl-36 justify-between">
+        <div className="flex flex-col-reverse lg:flex-row ">
+          <div className="justify-center flex items-center">
+            <Image src="/images\Quadro2.jpg" alt="" width={540} height={340} />
+          </div>
+          <Image
+            src="/images\Quadro2.jpg"
+            alt=""
+            width={540}
+            height={340}
+            className="hidden"
+          />
+
+          <div className="flex flex-col lg:pl-36 lg:justify-between pb  -6 ">
             <div>
-              <h1 className="text-heading   item-center  font-bold text-Title  mb-3">
+              <h1 className="text-heading  flex justify-center item-center  font-bold text-Title  mb-3">
                 Nosso Propósito
               </h1>
-              <span className="mb-3 text-lg text-heading">
+              <span className="mb-3 text-lg text-heading flex justify-center  text-justify">
                 Bem-vindo ao Projeto Arte Concreta - um espaço dedicado à
                 celebração, exploração e promoção da arte de rua e do grafite.
                 Nossa missão é oferecer uma plataforma para artistas e
@@ -53,7 +65,7 @@ export default function Home() {
                 grafite e da arte de rua nas nossas cidades e comunidades.
               </span>
             </div>
-            <button className="flex gap-3 text-lg text-brown items-center">
+            <button className=" gap-3 text-lg text-brown items-center pt-6 pb-6 flex justify-center ">
               Saiba mais sobre o projeto arte concreta{' '}
               <ArrowRightCircle className="h-5 w-5" />
             </button>
