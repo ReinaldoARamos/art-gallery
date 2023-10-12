@@ -10,7 +10,7 @@ export function Footer() {
     "
     >
       <FooterLogo />
-      <HeaderTabs />
+
       <div className="gap-12 flex ">
         <button className="bg-arrow  p-3 rounded-full">
           <Facebook className="w-6  h-6 text-white " />
