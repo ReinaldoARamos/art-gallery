@@ -7,7 +7,7 @@ interface ImageSliderProps {
   images: string[]
 }
 
-const ImageSliderSm = ({ images }: ImageSliderProps) => {
+const BoardSlider = ({ images }: ImageSliderProps) => {
   const [currentImage, setCurrentImage] = useState(0)
 
   const nextImage = () => {
@@ -21,7 +21,7 @@ const ImageSliderSm = ({ images }: ImageSliderProps) => {
   }
 
   return (
-    <div className="lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-full hidden">
+    <div className="flex flex-col justify-center items-center w-full lg:hidden ">
       <div className="flex  items-center">
         <button
           className=" md:block -mr-4 z-30  bg-arrow p-3 text-white rounded-full  "
@@ -33,7 +33,7 @@ const ImageSliderSm = ({ images }: ImageSliderProps) => {
         <Image
           src={`/images\\${images[currentImage]}`}
           alt={`Image ${currentImage}`}
-          width={1234}
+          width={540}
           height={340}
           className="object-cover"
         />
@@ -44,29 +44,21 @@ const ImageSliderSm = ({ images }: ImageSliderProps) => {
           <CaretRight className="h-6 w-6" />
         </button>
       </div>
-      <div className=" flex flex-col justify-center items-center pt-6  ">
-        <div className="text-3xl text-Title pb-5  ">
-          Conexão Concreta: Simpósio Internacional de Arte urbana
-        </div>
-        <div className="pb-5 text-xl text-brown">
-          {' '}
-          Praça da República, São Paulo, Brasil
-        </div>
-        <div className="flex gap-3">
-          {images.map((_, index) => (
-            <div
-              key={index}
-              className={`w-3 h-3 rounded-full   ${
-                index === currentImage
-                  ? 'bg-arrow w-12 transition-all duration-300'
-                  : 'bg-gray transition-all duration-300 '
-              }`}
-            />
-          ))}
-        </div>
+
+      <div className="flex gap-3 pt-3">
+        {images.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full   ${
+              index === currentImage
+                ? 'bg-arrow w-12 transition-all duration-300'
+                : 'bg-gray transition-all duration-300 '
+            }`}
+          />
+        ))}
       </div>
     </div>
   )
 }
 
-export default ImageSliderSm
+export default BoardSlider

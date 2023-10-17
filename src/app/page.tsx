@@ -6,8 +6,13 @@ import ImageSlider from './components/ImageSlider/ImageSlider'
 import { Tags } from './components/Tags/Tags'
 import { BlogLink } from './components/BlogLink/BlogLink'
 import { Button } from './components/Button/ButtonTest'
+import ImageSliderSm from './components/ImageSliderSm/ImageSliderSm'
+import BoardSlider from './components/BoardSlider/BoardSlider'
 
 const images = ['slider-1.jpg', 'slider-2.jpg', 'slider-3.jpg']
+const images2 = ['Teste.png', 'Teste.png', 'Teste.png']
+const images3 = ['Board-Slide-1.png', 'Board-Slide-1.png', 'Board-Slide-1.png']
+const images4 = ['Board-Slide-2.png', 'Board-Slide-2.png', 'Board-Slide-2.png']
 export default function Home() {
   return (
     <>
@@ -37,7 +42,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col-reverse lg:flex-row ">
-          <div className="justify-center flex items-center">
+          <div className="justify-center flex items-center lg:hidden">
             <Image src="/images\Quadro2.jpg" alt="" width={540} height={340} />
           </div>
           <Image
@@ -45,9 +50,8 @@ export default function Home() {
             alt=""
             width={540}
             height={340}
-            className="hidden"
+            className="sm:hidden lg:block md:hidden"
           />
-
           <div className="flex flex-col lg:pl-36 lg:justify-between pb  -6 ">
             <div>
               <h1 className="text-heading  flex justify-center item-center  font-bold text-Title  mb-3">
@@ -71,11 +75,11 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="lg:flex lg:flex-col hidden">
-          <h1 className="text-heading   item-center  font-bold text-Title  mb-3">
+        <div className="flex flex-col ">
+          <h1 className="text-heading   item-center  font-bold text-Title  mb-3 sm:flex sm:justify-center">
             Obras em destaque
           </h1>
-          <div className="flex gap-5">
+          <div className="lg:flex lg:gap-5 hidden">
             <Board
               author="Ana Maria Silva"
               height={315}
@@ -105,15 +109,16 @@ export default function Home() {
               src="/images\image-2.jpg"
             />
           </div>
+          <BoardSlider images={images3} />
           <Button variant="ghost">
             Ver galeria completa <ArrowRightCircle className="h-6 w-6" />
           </Button>
         </div>
-        <div className="lg:flex lg:flex-col hidden">
-          <h1 className="text-heading   item-center  font-bold text-Title  mb-3">
+        <div className="flex flex-col ">
+          <h1 className="text-heading   item-center  font-bold text-Title  mb-3 sm:flex sm:justify-center">
             Artistas em Destaque
           </h1>
-          <div className="flex gap-5">
+          <div className="lg:flex lg:gap-5 hidden">
             <Board
               author="Belo Horizonte/MG"
               height={157}
@@ -143,14 +148,16 @@ export default function Home() {
               src="/images\Camila.jpg"
             />
           </div>
+          <BoardSlider images={images4} />
           <Button variant="ghost">
             Ver Todos os nossos artistas{' '}
             <ArrowRightCircle className="h-6 w-6" />
           </Button>
         </div>
-        <div className="hidden">
-          <ImageSlider images={images} />
-        </div>
+
+        <ImageSlider images={images} />
+
+        <ImageSliderSm images={images2} />
         <div className="lg:grid lg:grid-cols-2 flex flex-col ">
           <div className="space-y-8">
             <h1 className="text-heading  flex justify-center items-center  item-center  font-bold text-Title  mb-9">
@@ -174,7 +181,7 @@ export default function Home() {
               </div>
             </div>
             <button className="flex   justify-center  text-base">
-              <div className="flex gap-3 items-center text-md hidden">
+              <div className="flex gap-3 items-center text-md ">
                 Acompanhar o blog <ArrowRightCircle className="h-5 w-5" />
               </div>
             </button>

@@ -21,7 +21,7 @@ const ImageSliderSm = ({ images }: ImageSliderProps) => {
   }
 
   return (
-    <div className="lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-full hidden">
+    <div className="flex flex-col justify-center items-center w-full lg:hidden ">
       <div className="flex  items-center">
         <button
           className=" md:block -mr-4 z-30  bg-arrow p-3 text-white rounded-full  "
@@ -33,7 +33,7 @@ const ImageSliderSm = ({ images }: ImageSliderProps) => {
         <Image
           src={`/images\\${images[currentImage]}`}
           alt={`Image ${currentImage}`}
-          width={1234}
+          width={540}
           height={340}
           className="object-cover"
         />

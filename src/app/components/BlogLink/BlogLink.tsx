@@ -9,7 +9,7 @@ export function BlogLink({ description, title }: BlogLinkProps) {
     <div className="flex flex-col  border-b border-b-gray">
       <div className="text-2xl text-boardbrown pb-3">{title}</div>
       <div className="flex justify-between items-center pb-5">
-        <span>{description}</span>
+        <span className=" w-60">{description}</span>
         <div className=" hover:cursor-pointer transition duration-300 hover:text-boardbrown group">
           <ArrowRightCircle className="h-10 w-10 text-base group-hover:text-boardbrown" />
         </div>
