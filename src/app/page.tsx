@@ -76,7 +76,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col ">
-          <h1 className="text-heading   item-center  font-bold text-Title  mb-3 sm:flex sm:justify-center">
+          <h1 className="lg:text-heading  text-2xl justify-center flex item-center  font-bold text-Title  mb-3 sm:flex sm:justify-center">
             Obras em destaque
           </h1>
           <div className="lg:flex lg:gap-5 hidden">
@@ -115,7 +115,7 @@ export default function Home() {
           </Button>
         </div>
         <div className="flex flex-col ">
-          <h1 className="text-heading   item-center  font-bold text-Title  mb-3 sm:flex sm:justify-center">
+          <h1 className="lg:text-heading  text-2xl justify-center flex item-center  font-bold text-Title  mb-3 sm:flex sm:justify-center">
             Artistas em Destaque
           </h1>
           <div className="lg:flex lg:gap-5 hidden">
