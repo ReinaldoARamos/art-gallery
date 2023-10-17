@@ -4,8 +4,8 @@ import Logo from './Logo'
 export default function Header() {
   return (
     <div className="flex  w-full items-center justify-between bg-base md:px-72 text-zinc-200  h-28 ">
-      <Logo className="md:flex hidden" />
-      <div className="hidden">
+      <Logo className="lg:block  " />
+      <div className="lg:block hidden">
         {' '}
         <HeaderTabs />
       </div>

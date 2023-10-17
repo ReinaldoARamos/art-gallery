@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 
 import { ArrowRightCircle } from 'lucide-react'
@@ -8,12 +9,14 @@ import { BlogLink } from './components/BlogLink/BlogLink'
 import { Button } from './components/Button/ButtonTest'
 import ImageSliderSm from './components/ImageSliderSm/ImageSliderSm'
 import BoardSlider from './components/BoardSlider/BoardSlider'
+import { UseRedirect } from './hooks/useRedirect'
 
 const images = ['slider-1.jpg', 'slider-2.jpg', 'slider-3.jpg']
 const images2 = ['Teste.png', 'Teste.png', 'Teste.png']
 const images3 = ['Board-Slide-1.png', 'Board-Slide-1.png', 'Board-Slide-1.png']
 const images4 = ['Board-Slide-2.png', 'Board-Slide-2.png', 'Board-Slide-2.png']
 export default function Home() {
+  const RedirectTo = UseRedirect()
   return (
     <>
       <div className="space-y-32   px-6 lg:px-72">
@@ -31,7 +34,7 @@ export default function Home() {
             </p>
             <div className="flex justify-center items-center">
               {' '}
-              <Button>
+              <Button onClick={() => RedirectTo('/gallery')}>
                 Ver Galeria de Arte <ArrowRightCircle className="h-6 w-6" />
               </Button>
             </div>
