@@ -44,8 +44,8 @@ const ImageSliderSm = ({ images }: ImageSliderProps) => {
           <CaretRight className="h-6 w-6" />
         </button>
       </div>
-      <div className=" flex flex-col justify-center items-center pt-6  ">
-        <div className="text-3xl text-Title pb-5  ">
+      <div className=" flex flex-col justify-center items-center pt-6 ">
+        <div className="lg:text-3xl text-Title pb-5 text-2xl text-center  ">
           Conexão Concreta: Simpósio Internacional de Arte urbana
         </div>
         <div className="pb-5 text-xl text-brown">
