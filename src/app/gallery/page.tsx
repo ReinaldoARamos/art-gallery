@@ -6,10 +6,12 @@ import { InterviewCard } from '../components/InterviewCard/InterviewCard'
 import { Button } from '../components/Button/ButtonTest'
 
 import { UseRedirect } from '../hooks/useRedirect'
+import BoardSlider from '../components/BoardSlider/BoardSlider'
 
 export default function Gallery() {
   const redirectTo = UseRedirect()
-
+  const images = ['gallery-1.png', 'gallery-1.png', 'gallery-1.png']
+  const images2 = ['Teste.png', 'Teste.png', 'Teste.png']
   return (
     <>
       <div className="bg-[url('/images/banner.jpg')] bg-cover pt-32 pb-72 ">
@@ -21,10 +23,12 @@ export default function Gallery() {
       <div className="pb-14 pt-8 font-bold text-title flex gap-3 justify-center items-center text-4xl  before:h-0.5 before:bg-gray before:w-96 after:h-0.5 after:bg-gray after:w-96 ">
         Obras
       </div>
-      <div className="px-72 flex flex-col">
+      <div className="lg:px-72 px-6 flex flex-col">
         <div>
-          <div>Para colecionar</div>
-          <div className="grid grid-cols-4 gap-5">
+          <div className="text-base lg:text-2xl text-5xl pb-4 flex justify-center">
+            Para colecionar
+          </div>
+          <div className="lg:grid lg:grid-cols-4 lg:gap-5 hidden">
             <Board
               author="Ana Maria Silva"
               height={315}
@@ -82,6 +86,75 @@ export default function Gallery() {
               src="/images\image-6.jpg"
             />
           </div>
+          <BoardSlider images={images} />
+          <div className="flex justify-center">
+            <Button
+              variant="ghost"
+              onClick={() => redirectTo(`gallery/artwork`)}
+            >
+              Ver todas as obras
+              <ArrowRightCircle className="w-6 h-6" />
+            </Button>
+          </div>
+          <div className="lg:grid lg:grid-cols-4 lg:gap-5 hidden">
+            <Board
+              author="Ana Maria Silva"
+              height={315}
+              width={315}
+              name="Voo da liberdade"
+              src="/images\image.jpg"
+            />
+            <Board
+              author="Gustavo Alves"
+              height={315}
+              width={315}
+              name="Cidade em Movimento"
+              src="/images\image-1.jpg"
+            />
+            <Board
+              author="Diego Pires"
+              height={315}
+              width={315}
+              name="Dançando com as Cores"
+              src="/images\image-3.jpg"
+            />
+            <Board
+              author="Preiscilla Souza"
+              height={315}
+              width={315}
+              name="Melodia Urbana"
+              src="/images\image-2.jpg"
+            />
+            <Board
+              author="Burna Paiva"
+              height={315}
+              width={315}
+              name="O Beijo do Grafite"
+              src="/images\image-4.jpg"
+            />
+            <Board
+              author="Amanda Brito"
+              height={315}
+              width={315}
+              name="Sopro de Vida"
+              src="/images\image-5.jpg"
+            />
+            <Board
+              author="Denise Sobreira"
+              height={315}
+              width={315}
+              name="Esperança Urbana"
+              src="/images\image-7.jpg"
+            />
+            <Board
+              author="Eduardo Pinho"
+              height={315}
+              width={315}
+              name="Sonhos em Tinta"
+              src="/images\image-6.jpg"
+            />
+          </div>
+          <BoardSlider images={images} />
           <div className="flex justify-center">
             <Button
               variant="ghost"

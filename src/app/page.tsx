@@ -72,7 +72,10 @@ export default function Home() {
                 grafite e da arte de rua nas nossas cidades e comunidades.
               </span>
             </div>
-            <button className=" gap-3 text-lg text-brown items-center pt-6 pb-6 flex justify-center ">
+            <button
+              className=" gap-3 text-lg text-brown items-center pt-6 pb-6 flex justify-center "
+              onClick={() => RedirectTo('/about')}
+            >
               Saiba mais sobre o projeto arte concreta{' '}
               <ArrowRightCircle className="h-5 w-5" />
             </button>
@@ -113,7 +116,7 @@ export default function Home() {
             />
           </div>
           <BoardSlider images={images3} />
-          <Button variant="ghost">
+          <Button variant="ghost" onClick={() => RedirectTo('/gallery')}>
             Ver galeria completa <ArrowRightCircle className="h-6 w-6" />
           </Button>
         </div>
@@ -152,7 +155,7 @@ export default function Home() {
             />
           </div>
           <BoardSlider images={images4} />
-          <Button variant="ghost">
+          <Button variant="ghost" onClick={() => RedirectTo('/artists')}>
             Ver Todos os nossos artistas{' '}
             <ArrowRightCircle className="h-6 w-6" />
           </Button>
