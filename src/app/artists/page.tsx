@@ -25,10 +25,10 @@ export default function Artists() {
         </div>
       </div>
       <BoardSlider images={images} />
-      <div className="text-Title text-3xl pt-20 lg:px-72 px-6 pb-9 flex justify-center">
+      <div className="text-Title text-3xl pt-20 lg:px-72 px-6 pb-9 flex lg:justify-normal justify-center">
         Artistas em destaque
       </div>
-      <div className="lg:px-72 px-6 flex  gap-5">
+      <div className="lg:px-72 px-6 flex  gap-5 justify-center">
         <div className="flex flex-col ">
           <div className="flex flex-col lg:flex-row gap-4 ">
             <ArtistsBoard
