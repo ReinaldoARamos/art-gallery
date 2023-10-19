@@ -26,7 +26,7 @@ export default function Gallery() {
       <div className="lg:px-72 px-6 flex flex-col">
         <div>
           <div className="text-base lg:text-2xl text-5xl pb-4 flex justify-center">
-            Para colecionar
+            Para Decorar
           </div>
           <div className="lg:grid lg:grid-cols-4 lg:gap-5 hidden">
             <Board
@@ -86,7 +86,13 @@ export default function Gallery() {
               src="/images\image-6.jpg"
             />
           </div>
-          <BoardSlider images={images} />
+          <div>
+            <BoardSlider images={images} />
+            <div className="space-y-3  pt-6 flex justify-center flex-col items-center">
+              <h2 className="text-2xl text-gray400">Cromática Transição</h2>
+              <span>Ana Luísa Ferreira</span>
+            </div>
+          </div>
           <div className="flex justify-center">
             <Button
               variant="ghost"
@@ -154,7 +160,13 @@ export default function Gallery() {
               src="/images\image-6.jpg"
             />
           </div>
-          <BoardSlider images={images} />
+          <div>
+            <BoardSlider images={images2} />
+            <div className="space-y-3  pt-6 flex justify-center flex-col items-center">
+              <h2 className="text-2xl text-gray400">Voo da Liberdade</h2>
+              <span>Ana Maria Silva</span>
+            </div>
+          </div>
           <div className="flex justify-center">
             <Button
               variant="ghost"
