@@ -10,21 +10,21 @@ export default function Events() {
   const RedirectTo = UseRedirect()
   return (
     <>
-      <div className="px-72 pt-14">
-        <div className="flex gap-28 pb-24">
+      <div className="lg:px-72 px-6 pt-14">
+        <div className="flex lg:flex-row flex-col-reverse lg:gap-28 gap-8 lg:pb-24 pb-9 lg:justify-normal items-center justify-center">
           <Image src="/images\image-36.png" alt="" width={540} height={375} />
           <div className="flex flex-col space-y-6 ">
-            <h1 className="text-Title text-5xl font-bold">
+            <h1 className="text-Title text-5xl font-bold lg:text-left text-center">
               Conexão Concreta: Simpósio Internacional de Arte Urbana
             </h1>
-            <span className="text-md text-brown text-justify">
+            <span className="text-md text-brown lg:text-justify text-center ">
               No Conexão Concreta, a arte vai muito além do concreto. Os
               participantes terão a oportunidade de se engajar em diálogos
               críticos sobre a influência da arte urbana na sociedade
               contemporânea, seu papel na transformação de espaços públicos e o
               impacto de novas tecnologias e mídias na prática da arte urbana.
             </span>
-            <div>
+            <div className="flex justify-center lg:block">
               <Button>
                 Saber mais sobre esse evento{' '}
                 <ArrowCircleRight className="w-6 h-6" />
@@ -38,7 +38,7 @@ export default function Events() {
         <div className="text-3xl text-gray300 flex justify-center">
           Exposições
         </div>
-        <div className="flex justify-center items-center gap-5 pt-8">
+        <div className="flex justify-center items-center gap-5 flex-col lg:flex-row pt-8">
           <EventBoard
             src="/images\workshop-1.png"
             width={315}
@@ -87,7 +87,7 @@ export default function Events() {
         <div className="text-3xl text-gray300 flex justify-center pt-8">
           Workshops
         </div>
-        <div className="flex gap-5 pt-8 justify-center">
+        <div className="flex gap-5 pt-8 justify-center lg:flex-row flex-col">
           <EventBoard
             src="/images\workshop-5.png"
             width={315}
@@ -136,7 +136,7 @@ export default function Events() {
         <div className="text-3xl text-gray300 flex pt-6 justify-center">
           Festivais
         </div>
-        <div className="flex gap-5 pt-8 justify-center">
+        <div className="flex gap-5 pt-8 justify-center flex-col lg:flex-row">
           <EventBoard
             src="/images\festival-1.png"
             width={315}
