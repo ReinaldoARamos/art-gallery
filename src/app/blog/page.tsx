@@ -107,7 +107,7 @@ export default function Blog() {
         </div>
 
         <div className="pb-12 pt-16 flex flex-col">
-          <h1 className="  text-Title text-5xl  font-bold">
+          <h1 className="  text-Title lg:text-5xl text-4xl  font-bold">
             Perguntas frequentes
           </h1>
           <Questions question="O que é a Arte Concreta e como ela se relaciona com a arte de rua?" />
@@ -118,7 +118,7 @@ export default function Blog() {
           <Questions question="Como a arte de rua pode impactar a comunidade local?" />
           <Questions question="Existe algum mapa ou guia para encontrar arte de rua em minha cidade?" />
         </div>
-        <div className="pb-16">
+        <div className="pb-16 lg:block flex justify-center">
           <Button variant="ghost">
             Ver todas as perguntas <ArrowCircleRight className="w-6 h-6 " />
           </Button>
