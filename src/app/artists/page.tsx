@@ -146,9 +146,9 @@ export default function Artists() {
       </div>
 
       <div className="bg-[url('/images/bg.jpg')] bg-cover mt-16">
-        <div className="flex justify-center items-center pt-20 pb-24">
+        <div className="flex justify-center items-center pt-20 pb-24 z-10">
           <form>
-            <h1 className=" text-white text-3xl pb-3 font-light flex lg:justify-normal justify-center">
+            <h1 className=" z-20 text-white text-3xl pb-3 font-light flex lg:justify-normal justify-center">
               Quero divulgar minhas obras aqui
             </h1>
 

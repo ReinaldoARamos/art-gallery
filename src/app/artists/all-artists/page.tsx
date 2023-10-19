@@ -18,8 +18,10 @@ export default function AllArtists() {
           input3="Filtar por estilo"
           placeholder3="Selecione um estilo"
         />
-        <h1 className="text-title  font-bold py-14">Todos os artistas</h1>
-        <div className="grid grid-cols-3">
+        <h1 className="text-title text-4xl flex justify-center lg:justify-normal  font-bold py-14 ">
+          Todos os artistas
+        </h1>
+        <div className="lg:grid lg:grid-cols-3 flex flex-col">
           <ArtistsBoard
             src="image-26.png"
             author="Ana Maria"
