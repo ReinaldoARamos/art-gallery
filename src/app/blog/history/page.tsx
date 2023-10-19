@@ -10,7 +10,7 @@ export default function History() {
   return (
     <>
       <div className="bg-[url('/images/history-banner.png')] bg-cover h-64 " />
-      <div className="px-72 pt-7">
+      <div className="lg:px-72 px-6 pt-7">
         <Directory path1="Blog" path2="Historia do grafite" />
         <div className="space-y-1">
           <span>Encontre um tutorial</span>
@@ -29,7 +29,7 @@ export default function History() {
         <h1 className="text-title text-4xl pt-14 pb-16 font-bold">
           História do grafite de rua
         </h1>
-        <div className="grid grid-cols-2">
+        <div className="lg:grid lg:grid-cols-2 flex flex-col">
           <InterviewCard />
           <InterviewCard />
           <InterviewCard />
