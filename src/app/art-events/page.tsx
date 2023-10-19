@@ -183,12 +183,12 @@ export default function Events() {
           </Button>
         </div>
       </div>
-      <div className="bg-base flex  justify-between   ">
-        <form className="flex flex-col py-20 pl-72 ">
-          <h1 className="text-white text-5xl font-bold">
+      <div className="bg-base flex flex-col lg:flex-row px-4 justify-between   ">
+        <form className="flex flex-col py-20 lg:pl-72 ">
+          <h1 className="text-white lg:text-5xl text-3xl font-bold text-center lg:text-left">
             Divulgue aqui o seu evento
           </h1>
-          <div className="grid  grid-cols-2  row- pt-10 gap-x-28 gap-y-7">
+          <div className="lg:grid  lg:grid-cols-2  flex justify-center flex-col items-center pt-10 gap-x-28 gap-y-7">
             <div className="flex flex-col  space-y-1.5 ">
               <span className="text-white font-semibold">Nome do evento</span>
               <input
@@ -223,14 +223,21 @@ export default function Events() {
               <input type="file" id="photo" className="hidden" />
             </div>
           </div>
-          <div className="pt-16">
+          <div className="pt-16 lg:block flex justify-center">
             <Button variant="light">
               Quero divulgar um evento <ArrowRightCircle className="h-6 w-6" />
             </Button>
           </div>
         </form>
-        <Image alt="" src="/images\image-37.jpg" width={645} height={559} />
+        <Image
+          alt=""
+          src="/images\image-37.jpg"
+          width={645}
+          height={559}
+          className="hidden lg:block"
+        />
       </div>
+      <div className="bg-[url('/images/image-37.jpg')] bg-cover h-96 w-full " />
     </>
   )
 }
