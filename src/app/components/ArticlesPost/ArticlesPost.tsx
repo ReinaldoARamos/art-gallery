@@ -21,10 +21,12 @@ export function ArticlesPost({
 }: ArticlePostProps) {
   const RedirectTo = UseRedirect()
   return (
-    <div className="flex gap-5  ">
-      <Image alt="" src={src} width={312} height={365} />
+    <div className="flex gap-5 lg:flex-row flex-col ">
+      <div className="lg:block flex justify-center items-center">
+        <Image alt="" src={src} width={312} height={365} />
+      </div>
       <div className="flex flex-col justify-between">
-        <div>
+        <div className="">
           <h1 className="text-title font-bold text-3xl pb-3">{title}</h1>
           <div className="flex flex-col space-y-1 pb-9">
             <span className="text-boardbrown text-md">
@@ -32,11 +34,11 @@ export function ArticlesPost({
             </span>
             <span className="text-brown text-sm">Em {date}</span>
           </div>
-          <div className="  w-[33.75rem] text-justify text-boardbrown text-sm">
+          <div className="  lg:w-[33.75rem] w-54 text-justify text-boardbrown text-sm">
             {article}
           </div>
         </div>
-        <div>
+        <div className="lg:block flex justify-center pt-10">
           <Button
             variant="lightwithborder"
             onClick={() => {

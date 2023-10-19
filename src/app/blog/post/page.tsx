@@ -6,7 +6,7 @@ export default function Post() {
   return (
     <>
       <div className="bg-[url('/images/tutorial-banner.png')] bg-cover h-64 " />
-      <div className="px-72">
+      <div className="lg:px-72 px-6">
         <div className="py-7 pb-36">
           <Directory path1="Blog" path2="O que é arte urbana" />
         </div>

@@ -11,12 +11,12 @@ export default function Articles() {
   return (
     <>
       <div className="bg-[url('/images/articles-banner.png')] bg-cover h-64 " />
-      <div className="px-72 pt-7">
+      <div className="lg:px-72 px-6  pt-7">
         <Directory path1="Blog" path2="Artigos" />
 
         <h1 className="text-title text-4xl pt-14 pb-16 font-bold">Artigos</h1>
-        <div className="flex gap-5">
-          <div className="space-y-12">
+        <div className="flex  gap-5">
+          <div className="space-y-12 ">
             <ArticlesPost
               src={'/images/post-1.png'}
               author={'Júlia Albuquerque'}
@@ -45,7 +45,7 @@ export default function Articles() {
               }
             />
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 hidden lg:block">
             <div className="space-y-1">
               <span>Encontre um artigo</span>
               <div className="flex gap-5">

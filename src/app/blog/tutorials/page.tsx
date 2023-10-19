@@ -11,10 +11,12 @@ export default function Tutorials() {
   return (
     <>
       <div className="bg-[url('/images/tutorial-banner.png')] bg-cover h-64 " />
-      <div className="px-72 pt-7">
+      <div className="lg:px-72 px-6 pt-7">
         <Directory path1="Blog" path2="Tutoriais" />
 
-        <h1 className="text-title text-4xl pt-14 pb-16 font-bold">Tutoriais</h1>
+        <h1 className="text-title text-4xl pt-14 pb-16 font-bold lg:text-left text-center">
+          Tutoriais
+        </h1>
         <div className="flex gap-5">
           <div className="space-y-12">
             <ArticlesPost
@@ -36,7 +38,7 @@ export default function Tutorials() {
               }
             />
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 lg:block hidden">
             <div className="space-y-1">
               <span>Encontre um tutorial</span>
               <div className="flex gap-5">
