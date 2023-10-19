@@ -14,8 +14,11 @@ export default function About() {
         </div>
       </div>
 
-      <div className="px-72">
-        <div className="flex gap-6 pt-10">
+      <div className="lg:px-72 px-6">
+        <div
+          className="flex lg:flex-row flex-col gap-6 pt-10 
+      "
+        >
           <AboutMessages
             title={'Inclusão e representatividade'}
             src={'/images\\inclusion.svg'}
@@ -53,7 +56,7 @@ export default function About() {
             height={58}
           />
         </div>
-        <div className="flex gap-28">
+        <div className="flex gap-28 lg:flex-row flex-col">
           <Image
             src={'/images\\About-image1.png'}
             alt=""
@@ -61,7 +64,7 @@ export default function About() {
             height={362}
           />
           <div>
-            <h1 className="text-title text-4xl pb-20">Nossa missão</h1>
+            <h1 className="text-title text-4xl lg:pb-20 pb-9">Nossa missão</h1>
             <span className="text-brown text-md pb-9 text-justify">
               Nossa missão é promover, celebrar e preservar a arte de rua, dando
               voz e espaço aos artistas urbanos de todas as comunidades. Nosso
