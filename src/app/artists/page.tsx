@@ -70,7 +70,7 @@ export default function Artists() {
           <div className="text-Title text-3xl lg:justify-normal flex justify-center">
             Outros Artistas
           </div>
-          <div className="grid grid-cols-2 gap-4 pt-9 ">
+          <div className="lg:grid lg:grid-cols-2 flex gap-4 pt-9 flex-col justify-center lg:justify-normal">
             <ArtistsBoard
               author="Bruna Paivas"
               city="Manaus/Mg"
@@ -148,12 +148,12 @@ export default function Artists() {
       <div className="bg-[url('/images/bg.jpg')] bg-cover mt-16">
         <div className="flex justify-center items-center pt-20 pb-24">
           <form>
-            <h1 className=" text-white text-3xl pb-3 font-light">
+            <h1 className=" text-white text-3xl pb-3 font-light flex lg:justify-normal justify-center">
               Quero divulgar minhas obras aqui
             </h1>
 
             <div className="flex flex-col pt-8 ">
-              <div className="flex gap-28">
+              <div className="flex lg:gap-28 lg:flex-row flex-col justify-center items-center lg:items-baseline">
                 <div>
                   <span className="pb-1 text-zinc-50 font-semibold">
                     Seu email
@@ -180,13 +180,15 @@ export default function Artists() {
                 </div>
               </div>
             </div>
-            <button
-              type="submit"
-              className=" bg-white text-base rounded-full flex justify-center items-center gap-2 px-12 py-4 font-bold"
-            >
-              {' '}
-              Quero me manter atualizado <ArrowRightCircle />
-            </button>
+            <div className="flex justify-center lg:block">
+              <button
+                type="submit"
+                className=" bg-white text-base rounded-full flex justify-center items-center gap-2 px-12 py-4 font-bold"
+              >
+                {' '}
+                Quero me manter atualizado <ArrowRightCircle />
+              </button>
+            </div>
           </form>
         </div>
       </div>
