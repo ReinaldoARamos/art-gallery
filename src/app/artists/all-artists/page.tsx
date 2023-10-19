@@ -8,7 +8,7 @@ export default function AllArtists() {
   return (
     <>
       <div className="bg-[url('/images/artist-banner.png')] bg-cover h-64 "></div>
-      <div className="px-72 pt-7">
+      <div className="lg:px-72 px-6 pt-7">
         <Directory path1="Artistas" path2=" Todos os artistas" />
         <SearchBar
           input1="Encontre um artista"

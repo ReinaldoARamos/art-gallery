@@ -5,25 +5,32 @@ import { ArtistsBoard } from '../components/ArtistBoard/ArtistBoard'
 import { ArrowRightCircle } from 'lucide-react'
 import { Tags } from '../components/Tags/Tags'
 import { UseRedirect } from '../hooks/useRedirect'
+import BoardSlider from '../components/BoardSlider/BoardSlider'
+import { SearchBar } from '../components/Searchbar/SearchBar'
 
 export default function Artists() {
   const redirectTo = UseRedirect()
+
+  const images = ['image-22.png', 'image-23.png', 'image-24.png']
   return (
     <>
       <div className="flex flex-col pt-12 space-y-12 justify-center items-center pb-24 ">
         <h1 className="text-Title font-bold text-heading">
           Conheça nossos artistas
         </h1>
-        <div className="flex gap-16">
+        <div className="lg:flex gap-16 hidden ">
           <Image src="/images\image-22.png" alt="" width={315} height={315} />
           <Image src="/images\image-23.png" alt="" width={315} height={315} />
           <Image src="/images\image-24.png" alt="" width={315} height={315} />
         </div>
       </div>
-      <div className="text-Title text-3xl px-72 pb-9">Artistas em destaque</div>
-      <div className="px-72 flex  gap-5">
-        <div className="flex flex-col">
-          <div className="flex gap-4 ">
+      <BoardSlider images={images} />
+      <div className="text-Title text-3xl pt-20 lg:px-72 px-6 pb-9 flex justify-center">
+        Artistas em destaque
+      </div>
+      <div className="lg:px-72 px-6 flex  gap-5">
+        <div className="flex flex-col ">
+          <div className="flex flex-col lg:flex-row gap-4 ">
             <ArtistsBoard
               author="Ana Maria Silva"
               city="Belo Horizonte/MG"
@@ -35,8 +42,20 @@ export default function Artists() {
               src="Image.png"
             />
           </div>
-          <div className="text-Title text-3xl">Artistas Novos</div>
-          <div className="flex gap-4 pt-9">
+          <div className="flex lg:hidden justify-center py-11 ">
+            <SearchBar
+              input1={'Encontre um artista'}
+              input2={'Filtar por local'}
+              input3={'Filtar pro Estilo de arte'}
+              placeholder1={'Nome do artista'}
+              placeholder2={'Selecione um local'}
+              placeholder3={'Filtra por estilo de arte de rua'}
+            />
+          </div>
+          <div className="text-Title flex justify-center lg:justify-normal text-3xl">
+            Artistas Novos
+          </div>
+          <div className="flex gap-4 pt-9 lg:flex-row flex-col">
             <ArtistsBoard
               author="DIégo Pires"
               city="Blumenau/SC"
@@ -48,8 +67,10 @@ export default function Artists() {
               src="image-26.png"
             />
           </div>
-          <div className="text-Title text-3xl">Outros Artistas</div>
-          <div className="grid grid-cols-2 gap-4 pt-9">
+          <div className="text-Title text-3xl lg:justify-normal flex justify-center">
+            Outros Artistas
+          </div>
+          <div className="grid grid-cols-2 gap-4 pt-9 ">
             <ArtistsBoard
               author="Bruna Paivas"
               city="Manaus/Mg"
@@ -80,7 +101,7 @@ export default function Artists() {
             </div>
           </button>
         </div>
-        <div className="flex flex-col ">
+        <div className="lg:flex flex-col hidden">
           <div>Encontre um artista</div>
           <div className="flex  gap-5 pb-9 pt-1.5">
             <input

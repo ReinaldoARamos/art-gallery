@@ -22,7 +22,7 @@ export default function Intervirw() {
           <h1 className="text-title font-bold text-4xl pb-8">
             Todas as entrevistas
           </h1>
-          <div className="lg:grid lg:grid-cols-2  flex-col pb-24">
+          <div className="lg:grid lg:grid-cols-2  flex-col pb-24 md:flex-col ">
             <InterviewCard />
             <InterviewCard />
             <InterviewCard />
