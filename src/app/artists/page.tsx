@@ -14,8 +14,8 @@ export default function Artists() {
   const images = ['image-22.png', 'image-23.png', 'image-24.png']
   return (
     <>
-      <div className="flex flex-col pt-12 space-y-12 justify-center items-center pb-24 ">
-        <h1 className="text-Title font-bold text-heading">
+      <div className="flex flex-col pt-12 space-y-12 justify-center  lg:px-72 px-6 items-center pb-24 ">
+        <h1 className="text-Title font-bold lg:text-heading  text-4xl">
           Conheça nossos artistas
         </h1>
         <div className="lg:flex gap-16 hidden ">
@@ -67,7 +67,7 @@ export default function Artists() {
               src="image-26.png"
             />
           </div>
-          <div className="text-Title text-3xl lg:justify-normal flex justify-center">
+          <div className="text-Title text-3xl lg:justify-normal flex justify-center ">
             Outros Artistas
           </div>
           <div className="lg:grid lg:grid-cols-2 flex gap-4 pt-9 flex-col justify-center lg:justify-normal">
