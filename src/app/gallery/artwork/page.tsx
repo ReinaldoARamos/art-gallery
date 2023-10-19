@@ -8,7 +8,7 @@ export default function Artists() {
   return (
     <>
       <div className="bg-[url('/images/artwork-banner.jpg')] bg-cover h-64 "></div>
-      <div className="px-72">
+      <div className="lg:px-72 px-6">
         <div className="pt-7 pb-14">
           <Directory path1="Galeria" path2="Todos as obras" />
           <SearchBar
@@ -21,7 +21,7 @@ export default function Artists() {
           />
         </div>
         <h1 className="text-title text-4xl pb-9">Todos as Obras</h1>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="lg:grid lg:grid-cols-4 gap-6 flex flex-col">
           <Board
             author="Diego Pires"
             height={315}

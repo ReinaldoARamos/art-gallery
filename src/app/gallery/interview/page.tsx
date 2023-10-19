@@ -8,7 +8,7 @@ export default function Intervirw() {
   return (
     <>
       <div className="bg-[url('/images/inteview-banner.png')] bg-cover h-64 "></div>
-      <div className="px-72 pt-7 ">
+      <div className="lg:px-72 p-6 pt-7 ">
         <Directory path1="Galeria" path2="Todas as entrevistas" />
         <SearchBar
           input1={'Selecione uma entrevista'}
@@ -22,7 +22,7 @@ export default function Intervirw() {
           <h1 className="text-title font-bold text-4xl pb-8">
             Todas as entrevistas
           </h1>
-          <div className="grid grid-cols-2 pb-24">
+          <div className="lg:grid lg:grid-cols-2  flex-col pb-24">
             <InterviewCard />
             <InterviewCard />
             <InterviewCard />

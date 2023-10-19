@@ -3,7 +3,7 @@ import { Button } from '../Button/ButtonTest'
 
 export function NextPageButton() {
   return (
-    <div className="flex gap-5 justify-center items-center pb-14">
+    <div className="flex gap-5 justify-center flex-wrap lg:flex-row items-center pb-14">
       <Button>
         <ArrowLeftCircle className="h-6 w-6" />
         Anterior

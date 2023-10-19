@@ -168,7 +168,7 @@ export default function Gallery() {
               <span>Ana Maria Silva</span>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
             <Button
               variant="ghost"
               onClick={() => redirectTo(`gallery/artwork`)}
