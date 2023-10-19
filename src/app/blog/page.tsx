@@ -13,11 +13,11 @@ export default function Blog() {
     <>
       <div className="bg-[url('/images/Blog-Banner.png')] bg-cover pt-32 pb-72 ">
         <div className=" text-5xl bg-arrow  text-white font-bold flex justify-center items-center py-5">
-          <span>Blog da Arte Concreta</span>
+          <span className="text-center">Blog da Arte Concreta</span>
         </div>
       </div>
-      <div className="px-72">
-        <div className="pt-8 flex justify-center text-Title text-5xl pb-12">
+      <div className="lg:px-72 px-6">
+        <div className="pt-8 flex justify-center text-Title text-4xl lg:text-left text-center lg:text-5xl pb-6 lg:pb-12">
           História do grafite e a arte de rua
         </div>
         <div className="flex justify-center item-center">
@@ -60,15 +60,20 @@ export default function Blog() {
             }
           />
         </div>
-        <Button variant="articles" onClick={() => RedirectTo('blog/articles')}>
-          Ler mais
-          <ArrowCircleRight
-            className="h-6 w-6 fill  text-black fill"
-            weight="fill"
-          />
-        </Button>
+        <div className="lg:block flex justify-center pt-10">
+          <Button
+            variant="articles"
+            onClick={() => RedirectTo('blog/articles')}
+          >
+            Ver todas as postagens
+            <ArrowCircleRight
+              className="h-6 w-6 fill  text-black fill"
+              weight="fill"
+            />
+          </Button>
+        </div>
         <div className="pt-28 space-y-12">
-          <h1 className="text-5xl text-Title pb-6">Dicas e Totoriais</h1>
+          <h1 className="text-5xl text-Title pb-6">Dicas e Tutoriais</h1>
           <Articles
             src={'/images/Article-4.png'}
             title={'O que é arte urbana'}
@@ -88,13 +93,18 @@ export default function Blog() {
             }
           />
         </div>
-        <Button variant="articles" onClick={() => RedirectTo('blog/tutorials')}>
-          Ver todos os tutoriais
-          <ArrowCircleRight
-            className="h-6 w-6 fill  text-black fill"
-            weight="fill"
-          />
-        </Button>
+        <div className="lg:block flex justify-center pt-10">
+          <Button
+            variant="articles"
+            onClick={() => RedirectTo('blog/tutorials')}
+          >
+            Ver todos os tutoriais
+            <ArrowCircleRight
+              className="h-6 w-6 fill  text-black fill"
+              weight="fill"
+            />
+          </Button>
+        </div>
 
         <div className="pb-12 pt-16 flex flex-col">
           <h1 className="  text-Title text-5xl  font-bold">

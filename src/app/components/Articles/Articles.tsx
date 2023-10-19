@@ -19,7 +19,7 @@ export function Articles({
 }: ArticlesProps) {
   const RedirectTo = UseRedirect()
   return (
-    <div className="flex gap-5">
+    <div className="flex lg:flex-row flex-col gap-5">
       <Image alt="" src={src} width={760} height={364} />
       <div className="flex flex-col ">
         <h1 className="text-title text-3xl pb-4">{title}</h1>
@@ -28,7 +28,7 @@ export function Articles({
           <p>Em {date}</p>
         </div>
         <div className="text-md text-brown">{description}</div>
-        <div className="pt-4">
+        <div className="pt-4 flex lg:block justify-center ">
           <Button
             variant="lightwithborder"
             onClick={() => {
