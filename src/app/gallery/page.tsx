@@ -25,9 +25,7 @@ export default function Gallery() {
       </div>
       <div className="lg:px-72 px-6 flex flex-col">
         <div>
-          <div className="text-base lg:text-2xl text-5xl pb-4 flex justify-center">
-            Para Decorar
-          </div>
+          <div className="text-2xl  pb-4 flex justify-center">Para Decorar</div>
           <div className="lg:grid lg:grid-cols-4 lg:gap-5 hidden">
             <Board
               author="Ana Maria Silva"
@@ -101,6 +99,9 @@ export default function Gallery() {
               Ver todas as obras
               <ArrowRightCircle className="w-6 h-6" />
             </Button>
+          </div>
+          <div className="text-2xl  pb-4 pt-12 flex justify-center">
+            Para Colecionar
           </div>
           <div className="lg:grid lg:grid-cols-4 lg:gap-5 hidden">
             <Board
