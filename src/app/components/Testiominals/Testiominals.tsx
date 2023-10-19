@@ -18,14 +18,14 @@ const Testimonial = ({ testimonials }) => {
   }
 
   return (
-    <div className="w-full bg-zinc-200 py-11 lg:px-72 px-6 flex items-center flex-col lg:flex-row lg:justify-between">
+    <div className=" bg-zinc-200 lg:px-72 py-11 lg:px-72 px-6 flex items-center flex-col lg:flex-row lg:justify-between">
       <button
         className="bg-arrow rounded-full p-3 hidden lg:block"
         onClick={prevTestimonial}
       >
         <CaretLeft className="h-5 w-5 text-white" />
       </button>
-      <div className="flex flex-col px-96">
+      <div className="flex flex-col lg:px-96">
         <div className="pb-4 bg-none text-Title text-7xl font-sans hidden lg:block">
           ´´
         </div>

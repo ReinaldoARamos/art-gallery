@@ -212,7 +212,7 @@ export default function Gallery() {
           <InterviewCard />
           <InterviewCard />
         </div>
-        <button className=" flex lg:justify-end item-center justify-center pt-8 lg:pr-2">
+        <button className=" flex lg:justify-end item-center justify-center pt-8 pr-2">
           <Button
             variant="ghost"
             onClick={() => redirectTo(`gallery/interview`)}
