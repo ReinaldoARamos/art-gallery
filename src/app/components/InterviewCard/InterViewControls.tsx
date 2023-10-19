@@ -29,7 +29,7 @@ export function InterViewControsl() {
 
           <button>
             <Pause
-              className="h-10 w-10  bg-white p-2 rounded-full"
+              className="h-10 w-10  bg-white p-3 rounded-full"
               weight="fill"
               color="black"
             />
