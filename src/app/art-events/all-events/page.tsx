@@ -8,7 +8,7 @@ export default function AllEvents() {
   return (
     <>
       <div className="bg-[url('/images/inteview-banner.png')] bg-cover h-64 " />
-      <div className="px-72 pt-7">
+      <div className="lg:px-72 px-6 pt-7">
         <Directory path1={'Eventos'} path2={'Todos os eventos'} />
         <SearchBar
           input1={'Encontre um festival'}
@@ -19,7 +19,7 @@ export default function AllEvents() {
           placeholder3={'Filtra pro data'}
         />
         <h1 className="pt-8 pb-11 text-Title text-4xl">Todos os festivais</h1>
-        <div className="grid grid-cols-4 pb-9">
+        <div className="lg:grid lg:grid-cols-4 flex flex-col pb-9">
           <EventBoard
             src="/images\festival-1.png"
             width={315}

@@ -237,7 +237,7 @@ export default function Events() {
           className="hidden lg:block"
         />
       </div>
-      <div className="bg-[url('/images/image-37.jpg')] bg-cover h-96 w-full " />
+      <div className="bg-[url('/images/image-37.jpg')] bg-cover h-96 w-full lg:hidden" />
     </>
   )
 }
