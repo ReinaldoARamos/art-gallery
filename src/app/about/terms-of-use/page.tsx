@@ -5,7 +5,7 @@ import { Directory } from '@/app/components/Directory/Directory'
 export default function Terms() {
   return (
     <>
-      <div className="px-72">
+      <div className="kg:px-72 px-6">
         <div className="pt-9 pb-52">
           <Directory path1="Sobre" path2="Termos de uso" />
         </div>

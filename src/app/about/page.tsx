@@ -4,8 +4,10 @@ import { AboutMessages } from '../components/About/AboutMessages'
 import { Button } from '../components/Button/ButtonTest'
 import { ArrowCircleRight } from 'phosphor-react'
 import { ArtistsBoard } from '../components/ArtistBoard/ArtistBoard'
+import BoardSlider from '../components/BoardSlider/BoardSlider'
 
 export default function About() {
+  const images = ['Larrisa.png', 'rincardo.png', 'Bruna.png', 'Luna.png']
   return (
     <>
       <div className="bg-[url('/images/about-banner.png')] bg-cover pt-32 pb-72 ">
@@ -64,7 +66,9 @@ export default function About() {
             height={362}
           />
           <div>
-            <h1 className="text-title text-4xl lg:pb-20 pb-9">Nossa missão</h1>
+            <h1 className="text-title text-4xl lg:pb-20 pb-9 lg:text-left text-center">
+              Nossa missão
+            </h1>
             <span className="text-brown text-md pb-9 text-justify">
               Nossa missão é promover, celebrar e preservar a arte de rua, dando
               voz e espaço aos artistas urbanos de todas as comunidades. Nosso
@@ -73,21 +77,24 @@ export default function About() {
               significativas, ajudando a transformar espaços públicos em
               galerias de arte ao ar livre.
             </span>
-            <Button variant="ghost">
-              Saber mais sobre a arte concreta{' '}
-              <ArrowCircleRight className="h-6 w-6" />
-            </Button>
+            <div className="flex lg:justify-normal justify-center">
+              {' '}
+              <Button variant="ghost">
+                Saber mais sobre a arte concreta{' '}
+                <ArrowCircleRight className="h-6 w-6" />
+              </Button>
+            </div>
           </div>
         </div>
-        <div className="pt-10 pb-14">
+        <div className="pt-10 pb-14  text-center">
           <h1 className="text-Title text-4xl pb-11">Nossa Equipe</h1>
-          <p className="text-brown text-md pb-8 w-96">
+          <p className="text-brown text-md pb-8 lg:w-96 ">
             Nossa equipe é composta por artistas, acadêmicos, curadores e
             apaixonados pela arte de rua. Nós compartilhamos um compromisso com
             a celebração da arte de rua e acreditamos no seu poder de inspirar,
             provocar e conectar pessoas de todas as origens.
           </p>
-          <div className="flex gap-5">
+          <div className="lg:flex gap-5  hidden">
             <ArtistsBoard
               src={'Larrisa.png'}
               author={'Larissa Dias'}
@@ -109,22 +116,20 @@ export default function About() {
               city={'São Paulo/SP'}
             />
           </div>
+          <BoardSlider images={images} />
         </div>
 
-        <div>
-          <h1 className="text-title text-4xl pb-12 flex justify-center">
-            Fale com a gente
-          </h1>
-          <p className="text-brown font-md pb-5 text-center ">
-            Adoraríamos ouvir de você, seja você um artista de rua procurando
-            por apoio, um membro
-            <br />
-            da comunidade interessado em aprender mais, ou alguém que gostaria
-            de apoiar nosso projeto.
-            <br />
-            Você pode nos alcançar pelo email arteconcreta@gmail.com ou através
-            do formulário de contato a seguir.
-          </p>
+        <div className="flex justify-center flex-col items-center pb-11">
+          <h1 className="text-title text-4xl pb-12 ">Fale com a gente</h1>
+          <div>
+            <p className="text-brown font-md pb-5  lg:w-[40rem] text-center">
+              Adoraríamos ouvir de você, seja você um artista de rua procurando
+              por apoio, um membro da comunidade interessado em aprender mais,
+              ou alguém que gostaria de apoiar nosso projeto. Você pode nos
+              alcançar pelo email arteconcreta@gmail.com ou através do
+              formulário de contato a seguir.
+            </p>
+          </div>
           <form>
             <div>
               <div>Nome</div>

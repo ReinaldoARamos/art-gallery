@@ -12,11 +12,11 @@ export default function Gallery() {
         </div>
       </div>
 
-      <div className="px-72">
+      <div className="lg:px-72 px-6">
         <div className="pb-14 pt-8 ">
           <Directory path1="Sobre" path2="Nossa missão" />
         </div>
-        <div className="flex gap-40 pb-24">
+        <div className="flex gap-40 pb-24 flex-col">
           <div>
             <h1 className=" text-Title text-3xl font-bold pb-16">
               Nossa missão
