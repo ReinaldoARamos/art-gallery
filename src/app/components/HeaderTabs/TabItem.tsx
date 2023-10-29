@@ -13,8 +13,8 @@ export function TabItem({ value, title, isSelected }: TabsItemsProps) {
   const redirectTo = UseRedirect()
 
   return (
-    <Tabs.Trigger value={value}>
-      <span onClick={() => redirectTo(`/${value}`)}>{title}</span>
+    <Tabs.Trigger value={value} onClick={() => redirectTo(`/${value}`)}>
+      <span>{title}</span>
 
       {isSelected && (
         <motion.div
