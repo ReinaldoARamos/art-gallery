@@ -7,12 +7,17 @@ export interface TabsItemsProps {
   isSelected?: boolean
 }
 
-export function TabItem({ value, title }: TabsItemsProps) {
+export function TabItemSm({ value, title }: TabsItemsProps) {
   const redirectTo = UseRedirect()
 
   return (
     <Tabs.Trigger value={value}>
-      <span onClick={() => redirectTo(`/${value}`)}>{title}</span>
+      <span
+        className="text-zinc-200 text-xl flex  "
+        onClick={() => redirectTo(`/${value}`)}
+      >
+        {title}
+      </span>
     </Tabs.Trigger>
   )
 }
