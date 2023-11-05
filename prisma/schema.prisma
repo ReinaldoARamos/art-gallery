@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Authors {
+  authorid String    @id @default(uuid())
+  name     String?
+  artwork    artwotk[]
+}
+
+model artwotk {
+  id        String  @id @default(uuid())
+  title     String
+  image_url String
+  author    Authors @relation(fields: [id], references: [authorid])
+  authorId  Int
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}

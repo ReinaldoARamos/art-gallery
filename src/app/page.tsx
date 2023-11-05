@@ -1,7 +1,8 @@
 'use client'
 import Image from 'next/image'
-
+import { useEffect, useState } from 'react'
 import { ArrowRightCircle } from 'lucide-react'
+
 import { Board } from './components/Board/Board'
 import ImageSlider from './components/ImageSlider/ImageSlider'
 import { Tags } from './components/Tags/Tags'
@@ -10,13 +11,47 @@ import { Button } from './components/Button/ButtonTest'
 import ImageSliderSm from './components/ImageSliderSm/ImageSliderSm'
 import BoardSlider from './components/BoardSlider/BoardSlider'
 import { UseRedirect } from './hooks/useRedirect'
-
+import { useQuery } from '@tanstack/react-query'
+import { api } from './lib/axios'
 const images = ['slider-1.jpg', 'slider-2.jpg', 'slider-3.jpg']
 const images2 = ['Teste.png', 'Teste.png', 'Teste.png']
 const images3 = ['Board-Slide-1.png', 'Board-Slide-1.png', 'Board-Slide-1.png']
 const images4 = ['Board-Slide-2.png', 'Board-Slide-2.png', 'Board-Slide-2.png']
+
+interface ArtworkProps {
+  id: string
+  title: string
+  image_url: string
+  authorId?: number
+}
+
 export default function Home() {
   const RedirectTo = UseRedirect()
+
+  const [data, setData] = useState<ArtworkProps[]>()
+
+  async function fetchData() {
+    const response = await api.get('/artwork')
+
+    setData(response.data)
+    console.log(data)
+  }
+  useEffect(() => {
+    fetchData()
+  }, [])
+  /*
+ {data.map((item) => (
+              <div key={item.id}>{item.title}</div>
+            ))}
+
+  const { data } = useQuery({
+    queryKey: ['artwork'],
+    queryFn: async () => {
+      const response = await api.get(`/artork`)
+      return response.data
+    },
+  })
+  * */
   return (
     <>
       <div className="space-y-32   px-6 lg:px-72">
@@ -25,6 +60,7 @@ export default function Home() {
             <h1 className="text-heading  font-bold text-Title  ">
               Dismitificando a arte urbana
             </h1>
+
             <p className="text-brown  text-justify text-2xl">
               Seja você um artista, um amante da arte ou
               <br />
