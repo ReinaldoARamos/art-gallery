@@ -23,6 +23,10 @@ interface ArtworkProps {
   title: string
   image_url: string
   authorId?: number
+
+  author: {
+    name: string
+  }
 }
 
 export default function Home() {
@@ -45,13 +49,7 @@ export default function Home() {
             <h1 className="text-heading  font-bold text-Title  ">
               Dismitificando a arte urbana
             </h1>
-            <div>
-              {data?.map((artwork) => (
-                <div key={artwork.id}>
-                  <h2>{artwork.title}</h2>
-                </div>
-              ))}
-            </div>
+
             <p className="text-brown  text-justify text-2xl">
               Seja você um artista, um amante da arte ou
               <br />
@@ -113,34 +111,16 @@ export default function Home() {
             Obras em destaque
           </h1>
           <div className="lg:flex lg:gap-5 hidden">
-            <Board
-              author="Ana Maria Silva"
-              height={315}
-              width={315}
-              name="Voo da liberdade"
-              src="/images\image.jpg"
-            />
-            <Board
-              author="Gustavo Alves"
-              height={315}
-              width={315}
-              name="Cidade em Movimento"
-              src="/images\image-1.jpg"
-            />
-            <Board
-              author="Diego Pires"
-              height={315}
-              width={315}
-              name="Dançando com as Cores"
-              src="/images\image-3.jpg"
-            />
-            <Board
-              author="Preiscilla Souza"
-              height={315}
-              width={315}
-              name="Melodia Urbana"
-              src="/images\image-2.jpg"
-            />
+            {data?.map((artwork) => (
+              <Board
+                height={157}
+                width={316}
+                name={artwork.title}
+                src={artwork.image_url}
+                key={artwork.id}
+                author={artwork.author.name}
+              />
+            ))}
           </div>
           <BoardSlider images={images3} />
           <Button variant="ghost" onClick={() => RedirectTo('/gallery')}>

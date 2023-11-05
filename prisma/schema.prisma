@@ -8,15 +8,15 @@ generator client {
 model Authors {
   authorid String    @id @default(uuid())
   name     String?
-  artwork    artwotk[]
+  artwork    artwork[]
 }
 
-model artwotk {
+model artwork {
   id        String  @id @default(uuid())
   title     String
   image_url String
   author    Authors @relation(fields: [id], references: [authorid])
-  authorId  Int
+
 }
 
 datasource db {
