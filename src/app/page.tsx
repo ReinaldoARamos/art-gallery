@@ -28,30 +28,15 @@ interface ArtworkProps {
 export default function Home() {
   const RedirectTo = UseRedirect()
 
-  const [data, setData] = useState<ArtworkProps[]>()
-
-  async function fetchData() {
-    const response = await api.get('/artwork')
-
-    setData(response.data)
-    console.log(data)
-  }
-  useEffect(() => {
-    fetchData()
-  }, [])
-  /*
- {data.map((item) => (
-              <div key={item.id}>{item.title}</div>
-            ))}
-
-  const { data } = useQuery({
+  const { data } = useQuery<ArtworkProps[]>({
     queryKey: ['artwork'],
     queryFn: async () => {
-      const response = await api.get(`/artork`)
+      const response = await api.get(`/artwork`)
+      console.log(response.data)
       return response.data
     },
   })
-  * */
+
   return (
     <>
       <div className="space-y-32   px-6 lg:px-72">
@@ -60,7 +45,13 @@ export default function Home() {
             <h1 className="text-heading  font-bold text-Title  ">
               Dismitificando a arte urbana
             </h1>
-
+            <div>
+              {data?.map((artwork) => (
+                <div key={artwork.id}>
+                  <h2>{artwork.title}</h2>
+                </div>
+              ))}
+            </div>
             <p className="text-brown  text-justify text-2xl">
               Seja você um artista, um amante da arte ou
               <br />
